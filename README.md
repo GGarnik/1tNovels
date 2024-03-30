@@ -16,3 +16,4 @@ Notion нашего проекта - https://www.notion.so/sprint1t/3-1-2b7e281c
 Юпитер была здесь!
 
 Тестовая запись ДЛЯ МОЕЙ ВЕТКИ!
+Nansy Hello team!
