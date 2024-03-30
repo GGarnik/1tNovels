@@ -1,47 +1,52 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<html>
+<head>
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/white.css" id="theme">
+</head>
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<section>Slide 1.1</section>
+				<section>Slide 1.2</section>
+				<section>Slide 1.3</section>
 
-		<title>reveal.js</title>
+			</section>
+			<section>Slide 1</section>
+			<section>Slide 2</section>
+            <section>
+                <h1>Заголовок</h1>
+                <h2>Под-заголовок</h2>
+                <h3>Под-под-заголовок</h3>
+                <h4>Под-под-под-заголовок</h4>
+                <p>Тело слайда</p>
+            </section>
+			<selection data-background-color="rgb(70,70,255)">Slide 3</selection>
+			<section> Slade 4</section>
+			<section> Slade 5</section>
+			<section> Slade 6</section>
+			<section> Slade 7</section>
+			<section> Slade 8</section>
+			<section> Slade 9</section>
+			<section> Slade 10</section>
+			<section>
+				<code src = "This is code: console.log('Hello, World! It's me!'')"> This is code: console.log("Hello, World!") </code>
+			</section>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
-
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Первый слайд. Конфиги уже настроены. На первом слайде должен быть выбор ника игрока.</section>
-				<section>Slide 2</section>
-			</div>
 		</div>
-
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
-
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
-				progress: false,
-				keyboard: false,
-				width: 1280,
-  				height: 720,
-				controls: false,
-				center: false,
-				jumpToSlide: false
-			});
-		</script>
-	</body>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js"></script>
+	<script>
+		//https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js
+		//dist/reveal.js
+		Reveal.initialize({/* config */
+			// controls:false,
+		});
+		document.querySelectorAll('.next-slide-button').forEach(button => {
+			button.addEventListener('click',function(){
+				Reveal.slide(1);
+			})
+		});
+	</script>
+</body>
 </html>
