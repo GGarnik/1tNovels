@@ -1,0 +1,45 @@
+/* Главный css файл проекта */
+
+/* Затемнение персонажа в момент, когда он не говорит */
+.blackimage {
+    filter: brightness(70%);
+}
+
+/* Шрифт (НЕ ТРОГАТЬ) */
+.slides {
+    font-family: "IBM Plex Serif:500";
+}
+
+/* Запретить взаимодействие с спрайтом (вешайте на все нетыкабельные картинки) */
+.imgnoevent {
+    pointer-events: none;
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+}
+
+.spiteCharacter {
+    position: relative;
+    z-index: -2;
+}
+
+.spriteTalkWindowBig {
+    position: relative;
+    z-index: -1;
+}
+
+.spriteTalkWindowSmall {
+    position: relative;
+    z-index: -1;
+}
+
+.textMain {
+    position: relative;
+    z-index: 4;
+}
+
+.textSmall {
+    position: relative;
+    z-index: 3;
+}
