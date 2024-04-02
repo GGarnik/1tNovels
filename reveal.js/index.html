@@ -9,7 +9,10 @@
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
 		<link rel="stylesheet" href="dist/theme/black.css">
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
 		<link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="dist/theme/minigamebackground.css">
+        <link rel="stylesheet" href="dist/customtheme.css">
  
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 	</head>
@@ -129,6 +132,66 @@
                     <p>Вы <span id="reactionCheck"></span></p>
                 </div>
             </section>
+
+            
+            
+            <!-- ДОБАВЛЯТЬ СЛАЙДЫ !ТОЛЬКО ДО МИНИИГРЫ!
+                МИНИИГРА С КАРТОЙ
+                canClickInit(); - НЕ ЗАБЫТЬ ДОБАВИТЬ В ПРЕДЫДУЩИЙ СЛАЙД
+            -->
+            <section>
+                <img data-src="images/player.png" class="imgnoevent" style="padding-top: 275px;">
+                <div style="position: relative; top: -425px; left: 48%;  z-index: 2;" >
+                    <img id="map" data-src="images/Labyrinth.png" class="imgnoevent map" style="width: 20%; height: 20%;">
+                </div>
+                <div style="position: absolute; top: 5px; left: 55%;  z-index: 0;border-left-style: solid;">
+                    <img id="map" data-src="images/рамкалабиринта.png" class="imgnoevent map" style="position:relative; width: 55%; height: 55%; left:262px; top:-30px; z-index:-0;">
+                </div>
+                
+                <div style="position: relative; top: -510px; left: 38%;  z-index: 1;"><img id="g1" data-src="images/шестерня1.png" class="imgnoevent" style="width: 5%; height: 5%;"></div>
+                <div style="position: relative; top: -620px; left: 42.3%;  z-index: 1;"><img id="g2" data-src="images/шестерня2.png" class="imgnoevent" style="width: 4%; height: 4%;"></div>
+                <div style="position: relative; top: -915px; left: 38%;  z-index: 1;"><img id="g3" data-src="images/шестерня3.png" class="imgnoevent" style="width: 5%; height: 5%;"></div>
+                <div style="position: relative; top: -975px; left: 38%;  z-index: 1;"><img id="g4" data-src="images/шестерня2.png" class="imgnoevent" style="width: 4%; height: 4%;"></div>
+                <div style="position: relative; top: -1215px; left: 42%;  z-index: 1;"><img id="g5" data-src="images/шестерня1.png" class="imgnoevent" style="width: 5%; height: 5%;"></div>
+                <div style="position: relative; top: -1325px; left: 46.8%;  z-index: 1;"><img id="g6" data-src="images/шестерня3.png" class="imgnoevent" style="width: 5%; height: 5%;"></div>
+                <div style="position: relative; top: -1235px; left: 58%;  z-index: 1;"><img id="g7" data-src="images/шестерня1.png" class="imgnoevent" style="width: 4.5%; height: 4.5%;"></div>
+                
+                <div class="imgnoevent" style="position: relative; top: -1562px; left:-250px; z-index: -1; width:2000px; height:10000px"><img id="ss1" data-src="images/сплошнаястена.png" class="imgnoevent invisible" style="position: relative; top:-1x; z-index: -1; width: 2000px; height:500px">
+                <img id="ss2" data-src="images/сплошнаястена.png" class="imgnoevent invisible" style="position: relative; top:-302px; z-index: -1; width: 2000px; height:500px; transform: rotate(180deg);">
+                <img id="ss3" data-src="images/сплошнаястена.png" class="imgnoevent invisible" style="position: relative; left:-637px; top:-410px; z-index: -2; width: 2000px; height:500px; transform: rotate(270deg);">
+                <img id="ss4" data-src="images/сплошнаястена.png" class="imgnoevent invisible" style="position: relative; left:417px; top:-1000px; z-index: -2; width: 2000px; height:500px; transform: rotate(90deg);">
+
+                <img id="us1" data-src="images/уголсквозной.png" class="imgnoevent invisible" style="position: absolute; left:100px; top:9px; z-index: -1; width: 1000px; height:450px;">
+                <img id="us2" data-src="images/уголсквозной.png" class="imgnoevent invisible" style="position: absolute; left:100px; top:293px; z-index: -1; width: 1000px; height:450px; transform: scale(1, -1);">
+                <img id="us3" data-src="images/уголсквозной.png" class="imgnoevent invisible" style="position: absolute; left:681px; top:292px; z-index: -1; width: 1000px; height:450px; transform: scale(-1, -1);">
+                <img id="us4" data-src="images/уголсквозной.png" class="imgnoevent invisible" style="position: absolute; left:681px; top:12px; z-index: -1; width: 1000px; height:450px; transform: scale(-1, 1);">
+
+                <img id="u1" data-src="images/уголок.png" class="imgnoevent invisible" style="position: absolute; left:100px; top:-1px; z-index: -1; width: 1200px; height:650px;">
+                <img id="u2" data-src="images/уголок.png" class="imgnoevent invisible" style="position: absolute; left:100px; top:102px; z-index: -1; width: 1200px; height:650px; transform: scale(1, -1);">
+                <img id="u3" data-src="images/уголок.png" class="imgnoevent invisible" style="position: absolute; left:475px; top:103px; z-index: -1; width: 1200px; height:650px; transform: scale(-1, -1);">
+                <img id="u4" data-src="images/уголок.png" class="imgnoevent invisible" style="position: absolute; left:475px; top:1px; z-index: -1; width: 1200px; height:650px; transform: scale(-1, 1);">
+
+                </div>	
+                
+                <div onclick="arrowDown()"><img id="downArrow" style="z-index: 5; top: 620px; left: 620px; display: block;" class="arrow" data-src="images/arrowDown.png"></img></div>
+                <div onclick="arrowRight()"><img id="rightArrow" style="z-index: 5; left: 1230px; top: 305px; display: block;" class="arrow2" data-src="images/arrowRight.png"></img></div>
+                <div onclick="arrowUp()"><img id="upArrow" style="z-index: 5; top: 40px; left: 620px; display: block;" class="arrow3" data-src="images/arrowUp.png"></img></div>
+                <div onclick="arrowLeft()"><img id="leftArrow" style="z-index: 5; left: 50px; top: 305px; display: block;" class="arrow4" data-src="images/arrowLeft.png"></img></div>
+            </section>
+
+            <section>
+            <script src = 'js/pull.js'></script>
+    
+            <h1>Ответьте на вопрос:</h1>
+            <div id="question"></div>
+            <div id="answers"></div> 
+				
+            <!-- Тут точно будет пул вопросов... -->
+			</section>
+			
+
+            
+			
         </div>
     </div>
 
@@ -136,8 +199,20 @@
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
-        <script src="js/reactionSc.js"></script>
-		<script> 
+    <script src="js/reactionSc.js"></script>
+    <script src="dist/mapgame.js"></script>
+
+		<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.3.0/math.min.js></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
