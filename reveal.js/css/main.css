@@ -43,3 +43,8 @@
     position: relative;
     z-index: 3;
 }
+
+.button {
+    height: 5rem;
+    width: 15rem;
+}

@@ -9,6 +9,8 @@
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
 		<link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="dist/theme/minigamebackground.css">
         <link rel="stylesheet" href="dist/customtheme.css">
@@ -146,6 +148,19 @@
                 <div onclick="arrowUp()"><img id="upArrow" style="z-index: 5; top: 40px; left: 620px; display: block;" class="arrow3" data-src="images/arrowUp.png"></img></div>
                 <div onclick="arrowLeft()"><img id="leftArrow" style="z-index: 5; left: 50px; top: 305px; display: block;" class="arrow4" data-src="images/arrowLeft.png"></img></div>
             </section>
+
+            <section>
+					    <script src = 'js/pull.js'></script>
+				
+					  <h1>Ответьте на вопрос:</h1>
+					  <div id="question"></div>
+					  <div id="answers"></div>
+				
+    
+			      </section>
+			      <!-- тут точно будет пул вопросов... -->
+
+            
 			
         </div>
     </div>
@@ -154,8 +169,18 @@
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
-        <script src="dist/mapgame.js"></script>
+    <script src="dist/mapgame.js"></script>
+
 		<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.3.0/math.min.js></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
