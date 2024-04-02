@@ -1,73 +1,203 @@
 <!doctype html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>reveal.js</title>
 
-	<title>reveal.js</title>
-
-	<link rel="stylesheet" href="dist/reset.css">
-	<link rel="stylesheet" href="dist/reveal.css">
-	<link rel="stylesheet" href="dist/theme/black.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
 		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="dist/theme/minigamebackground.css">
+        <link rel="stylesheet" href="dist/customtheme.css">
+ 
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+    <div class="reveal">
+        <div class="slides">
+			<!--СЛАЙД 1-->
+            <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none">
+                <!-- Основное диалоговое окно: -->
+				<div class="spriteTalkWindowBig" onclick="Reveal.next()" data-block-type="shape" style="width: 1246px; height: 193px; left: 15px; top: 0px; margin-top: 520px; margin-left: -10px;"><a class="" data-shape-type="rect" data-shape-fill-color="rgba(46, 38, 38, 0.55)" data-shape-stretch="true" data-shape-stroke-color="#403a3a" data-shape-stroke-width="6px" data-shape-corner-radius="23px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1246 193">
+                            <defs>
+                                <clipPath id="shape-mask-1-1709993187659">
+                                    <rect width="1246" height="193" rx="23" ry="23" fill="rgba(46, 38, 38, 0.55)" stroke="#403a3a" stroke-width="12"></rect>
+                                </clipPath>
+                            </defs>
+                            <rect width="1246" height="193" rx="23" ry="23" class="shape-element" fill="rgba(46, 38, 38, 0.55)" stroke="#403a3a" stroke-width="12" clip-path="url(#shape-mask-1-1709993187659)"></rect>
+                        </svg></a></div>
+				<!-- Маленькое окно над диалоговым: -->
+                <div class="spriteTalkWindowSmall" data-block-type="shape" style="width: 222px; height: 52px; margin-top: -240px; margin-left: 10px;"><a class="" data-shape-type="rect" data-shape-fill-color="rgba(46, 38, 38, 0.55)" data-shape-stretch="true" data-shape-stroke-color="#403a3a" data-shape-stroke-width="6px" data-shape-corner-radius="23px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 222 52">
+                            <defs>
+                                <clipPath id="shape-mask-2-1709993579483">
+                                    <rect width="222" height="52" rx="23" ry="23" fill="rgba(46, 38, 38, 0.55)" stroke="#403a3a" stroke-width="12"></rect>
+                                </clipPath>
+                            </defs>
+                            <rect width="222" height="52" rx="23" ry="23" class="shape-element" fill="rgba(46, 38, 38, 0.55)" stroke="#403a3a" stroke-width="12" clip-path="url(#shape-mask-2-1709993579483)"></rect>
+                        </svg></a></div>
+				<!-- Текст ВНУТРИ диалогового окна: -->
+                <div class="" data-block-type="text" onclick="Reveal.next()" style="height: auto; width: 1200px; left: 41.7101px; top: 523.5px; margin-top: -20px; margin-left: 20px;" ><a class="" style="">
+                        <div class="textMain" style=" text-align: left; font-size: 100%; transform-origin: 0% 50% 0px; transition-duration: 0.6s; transition-delay: 0.6s;">
+                            <p><span style="color:#FFFFFF">Где это мы?</span></p>
+                        </div>
+                    </a></div>
+				<!-- Кто говорит: -->
+                <div class="" data-block-type="text" style="height: auto; width: 600px; left: 50.4595px; top: 467.706px; margin-left: 30px; margin-top: -122px;">
+                    <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                        <p><span style="color:#FFFFFF"><strong>Джесси</strong></span></p>
+                    </div>
+                </div>
+				<!-- Спрайты: (margin-left отвечает за положение спрайта по горизонтали) -->
+                <div class="" data-block-type="image" onclick="Reveal.next()" style="width: 471.2px; height: 706.8px; left: 394px; top: 13.2px; min-width: 1px; min-height: 1px; margin-top: -495px; margin-left: 350px;">
+                    <div class="" filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+						<!-- Спрайт Джесси: -->
+                        <div class="imgnoevent spiteCharacter" position="relative"><img class="" data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Джесси.png"></div>
+                    </div>
+                </div>
+            </section>
 
-	<!-- Theme used for syntax highlighted code -->
-	<link rel="stylesheet" href="plugin/highlight/monokai.css">
-</head>
 
-<body>
-	<div class="reveal">
-		<div class="slides">
-			<section>Первый слайд. Конфиги уже настроены. На первом слайде должен быть выбор ника игрока.</section>
-			<section>Slide 2</section>
-			<section>Slide 3</section>
-			<section>
-					<script src = 'js/pull.js'></script>
+			<!--СЛАЙД 2-->
+            <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none">
+                <!-- Основное диалоговое окно: -->
+				<div class="spriteTalkWindowBig" onclick="Reveal.next()" data-block-type="shape" style="width: 1246px; height: 193px; left: 15px; top: 0px; margin-top: 520px; margin-left: -10px;"><a class="" data-shape-type="rect" data-shape-fill-color="rgba(46, 38, 38, 0.55)" data-shape-stretch="true" data-shape-stroke-color="#403a3a" data-shape-stroke-width="6px" data-shape-corner-radius="23px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1246 193">
+                            <defs>
+                                <clipPath id="shape-mask-1-1709993187659">
+                                    <rect width="1246" height="193" rx="23" ry="23" fill="rgba(46, 38, 38, 0.55)" stroke="#403a3a" stroke-width="12"></rect>
+                                </clipPath>
+                            </defs>
+                            <rect width="1246" height="193" rx="23" ry="23" class="shape-element" fill="rgba(46, 38, 38, 0.55)" stroke="#403a3a" stroke-width="12" clip-path="url(#shape-mask-1-1709993187659)"></rect>
+                        </svg></a></div>
+				<!-- Маленькое окно над диалоговым: -->
+                <div class="spriteTalkWindowSmall" data-block-type="shape" style="width: 222px; height: 52px; margin-top: -240px; margin-left: 10px;"><a class="" data-shape-type="rect" data-shape-fill-color="rgba(46, 38, 38, 0.55)" data-shape-stretch="true" data-shape-stroke-color="#403a3a" data-shape-stroke-width="6px" data-shape-corner-radius="23px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 222 52">
+                            <defs>
+                                <clipPath id="shape-mask-2-1709993579483">
+                                    <rect width="222" height="52" rx="23" ry="23" fill="rgba(46, 38, 38, 0.55)" stroke="#403a3a" stroke-width="12"></rect>
+                                </clipPath>
+                            </defs>
+                            <rect width="222" height="52" rx="23" ry="23" class="shape-element" fill="rgba(46, 38, 38, 0.55)" stroke="#403a3a" stroke-width="12" clip-path="url(#shape-mask-2-1709993579483)"></rect>
+                        </svg></a></div>
+				<!-- Текст ВНУТРИ диалогового окна: -->
+                <div class="" data-block-type="text" onclick="Reveal.next()" style="height: auto; width: 1200px; left: 41.7101px; top: 523.5px; margin-top: -20px; margin-left: 20px;" ><a class="" style="">
+                        <div class="textMain" style=" text-align: left; font-size: 100%; transform-origin: 0% 50% 0px; transition-duration: 0.6s; transition-delay: 0.6s;">
+                            <p><span style="color:#FFFFFF">Это уже второй слайд!</span></p>
+                        </div>
+                    </a></div>
+				<!-- Кто говорит: -->
+                <div class="" data-block-type="text" style="height: auto; width: 600px; left: 50.4595px; top: 467.706px; margin-left: 30px; margin-top: -122px;">
+                    <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                        <p><span style="color:#FFFFFF"><strong>Джесси</strong></span></p>
+                    </div>
+                </div>
+				<!-- Спрайты: (margin-left отвечает за положение спрайта по горизонтали) -->
+                <div class="" data-block-type="image" onclick="Reveal.next()" style="width: 471.2px; height: 706.8px; left: 394px; top: 13.2px; min-width: 1px; min-height: 1px; margin-top: -495px; margin-left: 200px;">
+                    <div class="" filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+						<!-- Спрайт Джесси: -->
+                        <div class="imgnoevent spiteCharacter" position="relative"><img class="" data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Джесси.png"></div>
+                    </div>
+                </div>
+            </section>
+
+            
+            
+            <!-- ДОБАВЛЯТЬ СЛАЙДЫ !ТОЛЬКО ДО МИНИИГРЫ!
+                МИНИИГРА С КАРТОЙ
+                canClickInit(); - НЕ ЗАБЫТЬ ДОБАВИТЬ В ПРЕДЫДУЩИЙ СЛАЙД
+            -->
+            <section>
+                <img data-src="images/player.png" class="imgnoevent" style="padding-top: 275px;">
+                <div style="position: relative; top: -425px; left: 48%;  z-index: 2;" >
+                    <img id="map" data-src="images/Labyrinth.png" class="imgnoevent map" style="width: 20%; height: 20%;">
+                </div>
+                <div style="position: absolute; top: 5px; left: 55%;  z-index: 0;border-left-style: solid;">
+                    <img id="map" data-src="images/рамкалабиринта.png" class="imgnoevent map" style="position:relative; width: 55%; height: 55%; left:262px; top:-30px; z-index:-0;">
+                </div>
+                
+                <div style="position: relative; top: -510px; left: 38%;  z-index: 1;"><img id="g1" data-src="images/шестерня1.png" class="imgnoevent" style="width: 5%; height: 5%;"></div>
+                <div style="position: relative; top: -620px; left: 42.3%;  z-index: 1;"><img id="g2" data-src="images/шестерня2.png" class="imgnoevent" style="width: 4%; height: 4%;"></div>
+                <div style="position: relative; top: -915px; left: 38%;  z-index: 1;"><img id="g3" data-src="images/шестерня3.png" class="imgnoevent" style="width: 5%; height: 5%;"></div>
+                <div style="position: relative; top: -975px; left: 38%;  z-index: 1;"><img id="g4" data-src="images/шестерня2.png" class="imgnoevent" style="width: 4%; height: 4%;"></div>
+                <div style="position: relative; top: -1215px; left: 42%;  z-index: 1;"><img id="g5" data-src="images/шестерня1.png" class="imgnoevent" style="width: 5%; height: 5%;"></div>
+                <div style="position: relative; top: -1325px; left: 46.8%;  z-index: 1;"><img id="g6" data-src="images/шестерня3.png" class="imgnoevent" style="width: 5%; height: 5%;"></div>
+                <div style="position: relative; top: -1235px; left: 58%;  z-index: 1;"><img id="g7" data-src="images/шестерня1.png" class="imgnoevent" style="width: 4.5%; height: 4.5%;"></div>
+                
+                <div class="imgnoevent" style="position: relative; top: -1562px; left:-250px; z-index: -1; width:2000px; height:10000px"><img id="ss1" data-src="images/сплошнаястена.png" class="imgnoevent invisible" style="position: relative; top:-1x; z-index: -1; width: 2000px; height:500px">
+                <img id="ss2" data-src="images/сплошнаястена.png" class="imgnoevent invisible" style="position: relative; top:-302px; z-index: -1; width: 2000px; height:500px; transform: rotate(180deg);">
+                <img id="ss3" data-src="images/сплошнаястена.png" class="imgnoevent invisible" style="position: relative; left:-637px; top:-410px; z-index: -2; width: 2000px; height:500px; transform: rotate(270deg);">
+                <img id="ss4" data-src="images/сплошнаястена.png" class="imgnoevent invisible" style="position: relative; left:417px; top:-1000px; z-index: -2; width: 2000px; height:500px; transform: rotate(90deg);">
+
+                <img id="us1" data-src="images/уголсквозной.png" class="imgnoevent invisible" style="position: absolute; left:100px; top:9px; z-index: -1; width: 1000px; height:450px;">
+                <img id="us2" data-src="images/уголсквозной.png" class="imgnoevent invisible" style="position: absolute; left:100px; top:293px; z-index: -1; width: 1000px; height:450px; transform: scale(1, -1);">
+                <img id="us3" data-src="images/уголсквозной.png" class="imgnoevent invisible" style="position: absolute; left:681px; top:292px; z-index: -1; width: 1000px; height:450px; transform: scale(-1, -1);">
+                <img id="us4" data-src="images/уголсквозной.png" class="imgnoevent invisible" style="position: absolute; left:681px; top:12px; z-index: -1; width: 1000px; height:450px; transform: scale(-1, 1);">
+
+                <img id="u1" data-src="images/уголок.png" class="imgnoevent invisible" style="position: absolute; left:100px; top:-1px; z-index: -1; width: 1200px; height:650px;">
+                <img id="u2" data-src="images/уголок.png" class="imgnoevent invisible" style="position: absolute; left:100px; top:102px; z-index: -1; width: 1200px; height:650px; transform: scale(1, -1);">
+                <img id="u3" data-src="images/уголок.png" class="imgnoevent invisible" style="position: absolute; left:475px; top:103px; z-index: -1; width: 1200px; height:650px; transform: scale(-1, -1);">
+                <img id="u4" data-src="images/уголок.png" class="imgnoevent invisible" style="position: absolute; left:475px; top:1px; z-index: -1; width: 1200px; height:650px; transform: scale(-1, 1);">
+
+                </div>	
+                
+                <div onclick="arrowDown()"><img id="downArrow" style="z-index: 5; top: 620px; left: 620px; display: block;" class="arrow" data-src="images/arrowDown.png"></img></div>
+                <div onclick="arrowRight()"><img id="rightArrow" style="z-index: 5; left: 1230px; top: 305px; display: block;" class="arrow2" data-src="images/arrowRight.png"></img></div>
+                <div onclick="arrowUp()"><img id="upArrow" style="z-index: 5; top: 40px; left: 620px; display: block;" class="arrow3" data-src="images/arrowUp.png"></img></div>
+                <div onclick="arrowLeft()"><img id="leftArrow" style="z-index: 5; left: 50px; top: 305px; display: block;" class="arrow4" data-src="images/arrowLeft.png"></img></div>
+            </section>
+
+            <section>
+					    <script src = 'js/pull.js'></script>
 				
-					<h1>Ответьте на вопрос:</h1>
-					<div id="question"></div>
-					<div id="answers"></div>
+					  <h1>Ответьте на вопрос:</h1>
+					  <div id="question"></div>
+					  <div id="answers"></div>
 				
     
-			</section>
-			<!-- тут точно будет пул вопросов... -->
-		</div>
-	</div>
+			      </section>
+			      <!-- тут точно будет пул вопросов... -->
 
-	<script src="dist/reveal.js"></script>
-	<script src="plugin/notes/notes.js"></script>
-	<script src="plugin/markdown/markdown.js"></script>
-	<script src="plugin/highlight/highlight.js"></script>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            
+			
+        </div>
+    </div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+    <script src="dist/mapgame.js"></script>
+
+		<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.3.0/math.min.js></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
 		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
 		crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+	  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
 		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
 		crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
 		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 		crossorigin="anonymous"></script>
-	<script>
-		// More info about initialization & config:
-		// - https://revealjs.com/initialization/
-		// - https://revealjs.com/config/
-		Reveal.initialize({
-			hash: true,
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: false,
 
-			// Learn about plugins: https://revealjs.com/plugins/
-			plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
-			progress: false,
-			keyboard: true,
-			width: 1280,
-			height: 720,
-			controls: true,
-			center: false,
-			jumpToSlide: false
-		});
-	</script>
-</body>
-
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+				progress: false,
+				keyboard: false,
+				width: 1280,
+  				height: 720,
+				controls: false,
+				center: false,
+				jumpToSlide: false
+			});
+		</script>
+	</body>
 </html>
