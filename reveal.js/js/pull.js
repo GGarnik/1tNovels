@@ -1,18 +1,18 @@
 const questions = [
     { 
-        question: 'Когда мы начали разрабатывать новеллы',
-        answers: ['в октябре 2023', 'динаху', 'хз', 'хз'],
-        correctAnswer: 'в октябре 2023'
+        question: 'Сколько слов в букве "Яблоко"?',
+        answers: ['3', 'Нет', 'Носорог', '3км/с'],
+        correctAnswer: 'Нет'
     },
     { 
-        question: 'Как называется 1т',
-        answers: ['1т', '1т', '1т', '1т'],
-        correctAnswer: '1т'
+        question: 'Как переводиться слово "Apple"?',
+        answers: ['Аэробус', 'Микротранзакция', 'Биткоин', 'Груша'],
+        correctAnswer: 'Груша'
     },
     {
-        question: 'Кто лучший',
-        answers: ['не мы', 'мы'],
-        correctAnswer: 'мы'
+        question: 'Кто лучший?',
+        answers: ['Не мы', 'Мы'],
+        correctAnswer: 'Мы'
     }
 ];
 
@@ -51,5 +51,3 @@ function showAnswers() {
     }
     showQuestion();
 }
-
-window.onload = showAnswers;

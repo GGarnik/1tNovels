@@ -39,9 +39,10 @@ let angleSmall4 = document.getElementById('u4');
 let map = document.getElementById('map');
 
 
-// window.onload = function() {
-//     canClickInit();
-// }
+window.onload = function() {
+    canClickInit();
+    showAnswers();
+}
 
 const correctSide = ["l", "u", "u", "l", "u", "r", "r", "u", "l", "u", "u", "l", "l"
 , "d", "d", "l", "l", "l", "u", "r", "u", "r", "u", "l", "l", "l", "d", "d"
