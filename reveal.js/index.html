@@ -19,12 +19,12 @@
 	<body>
     <div class="reveal">
         <div class="slides">
-            <section >Первый слайд. Конфиги уже настроены. На первом слайде должен быть выбор ника игрока.
+            <section>
 				
 						
-                <div class = "out"> имя игрока</div>
+                <div class = "out">Выберите имя игрока:</div>
                 <input type="text" class="input_text">
-                <button onclick="button_input()">Принять имя</button>
+                <button onclick="button_input(); textTypingEffect(div, text)">Принять имя</button>
                 
             </section>
 			<!--СЛАЙД 1-->
@@ -283,7 +283,6 @@
 					//document.querySelector(".out_name_next").innerHTML = name_player
 				}
 			}
-            textTypingEffect(div, text);
         </script>
 	</body>
 </html>
