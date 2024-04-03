@@ -19,6 +19,14 @@
 	<body>
     <div class="reveal">
         <div class="slides">
+            <section >Первый слайд. Конфиги уже настроены. На первом слайде должен быть выбор ника игрока.
+				
+						
+                <div class = "out"> имя игрока</div>
+                <input type="text" class="input_text">
+                <button onclick="button_input()">Принять имя</button>
+                
+            </section>
 			<!--СЛАЙД 1-->
             <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none">
                 <!-- Основное диалоговое окно: -->
@@ -258,7 +266,23 @@
                 console.log(div.textContent);
                 textTypingEffect(div, text);
             }
-
+            //создаем вызов в первом слайде для ui что бы получать и выводить текст
+			//функция где получем из type получаем имя игрока и записываем в переменную
+			function button_input(){
+				//document.querySelector(".out").innerHTML = "введи имя";
+				//console.log(document.querySelector(".input_text").value)
+				const name_player = document.querySelector(".input_text").value;
+				if( name_player == ""|| name_player==" "){
+					alert("введите имя")
+					return;
+				}
+				else{
+					//document.querySelector(".out").innerHTML = name_player;
+					console.log(name_player);
+					Reveal.slide(1)
+					//document.querySelector(".out_name_next").innerHTML = name_player
+				}
+			}
             textTypingEffect(div, text);
         </script>
 	</body>
