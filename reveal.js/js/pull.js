@@ -5,22 +5,22 @@ const questions = [
         correctAnswer: 'САБАКА'
     },
     { 
-        question: 'В каких сферах используется ИИ',
+        question: 'В каких сферах используется ИИ?',
         answers: ['Судебная система', 'Озвучка персонажей', 'При решении дискриминантом', 'Медицина'],
         correctAnswer: 'Медицина'
     },
     {
-        question: 'Кто лучший',
+        question: 'Кто лучший?',
         answers: ['не мы', 'мы'],
         correctAnswer: 'мы'
     },
     { 
-        question: 'Кого уволят в ближайшее время',
+        question: 'Кого уволят в ближайшее время?',
         answers: ['Некобоя', 'ЛИДЕРА', 'Виета', 'Юпитер'],
         correctAnswer: 'Некобоя'
     },
     { 
-        question: 'Из каких слоёв НЕ СОСТОИТ нейросеть',
+        question: 'Из каких слоёв НЕ СОСТОИТ нейросеть?',
         answers: ['Из входных', 'Из выходных', 'Из нейтральных', 'Из скрытых'],
         correctAnswer: 'Из нейтральных'
     },
@@ -34,7 +34,16 @@ const questions = [
         answers: ['Python', 'C++', 'JabaScript', 'Go'],
         correctAnswer: 'Python'
     },
-    
+    {
+        question: 'Сколько слов в букве "Яблоко"?',
+        answers: ['3', 'Нет', 'Носорог', '3км/с'],
+        correctAnswer: 'Нет'
+    },
+    { 
+        question: 'Как переводиться слово "Apple"?',
+        answers: ['Аэробус', 'Микротранзакция', 'Биткоин', 'Груша'],
+        correctAnswer: 'Груша'
+    },
 ];
 //растасовка вопросов и ответов(рифл-шафл)
 function shuffleArray(array) {
@@ -77,5 +86,3 @@ function showAnswers() {
     }
     showQuestion();
 }
-
-window.onload = showAnswers;
