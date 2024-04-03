@@ -108,7 +108,7 @@
                 МИНИИГРА С КАРТОЙ
                 canClickInit(); - НЕ ЗАБЫТЬ ДОБАВИТЬ В ПРЕДЫДУЩИЙ СЛАЙД
             -->
-            <section>
+            <section id="SlideMap">
                 <img data-src="images/player.png" class="imgnoevent" style="padding-top: 275px;">
                 <div style="position: relative; top: -425px; left: 48%;  z-index: 2;" >
                     <img id="map" data-src="images/Labyrinth.png" class="imgnoevent map" style="width: 20%; height: 20%;">
@@ -150,13 +150,13 @@
             
 
             <!-- РЕАКЦИЯ (ДРЕЛЬ) -->
-            <section data-background="#000000" id="3rd Slide" class="has-dark-background present" style="display: block;" data-index-h="2">
+            <section id="3rd Slide" data-background="#000000"  class="has-dark-background present" style="display: block;" data-index-h="2" data-transition="none" data-background-transition="none">
                 <div>
-                    <div class="imgnoevent textSmall" data-block-type="text" style="color: rgb(255, 255, 255); position: absolute; top: 350px; left: 252px; " id="textButtonQuestion">
-                    <span><strong>Нажмите, чтобы пройти проверку на реакции</strong></span>
+                    <div class="imgnoevent textSmall" data-block-type="text" style="color: rgb(255, 255, 255); position: absolute; top: 350px; left: 252px; " id="rscTextofButton">
+                    <span><strong>Попытаться сбежать</strong></span>
                     </div>
-                    <div class="" data-block-type="image" style="position: absolute; top: 325px; left:200px; " id="imageButtonQuestion1">
-                        <img onclick="timeDisplay()" class="" data-natural-width="400" data-natural-height="30" id="imageButtonQuestion2" src="images/кнопка.png" data-lazy-loaded="" style="">
+                    <div onclick="switchFunc()" class="" data-block-type="image" style="position: absolute; top: 325px; left:200px; " id="rscButton2">
+                        <img  class="" data-natural-width="400" data-natural-height="30" id="rscButton1" src="images/кнопка.png" data-lazy-loaded="" style="">
                     </div>
                 </div>
                  <div class="imgnoevent" data-block-type="image" style="position: absolute; left: 50px; top:95px">
@@ -166,13 +166,8 @@
                     <img src="images/ballLimit(400px).png" alt="">
                  </div>
                 
-                 <div class="" data-block-type="image" style="position: absolute; top: 100px; left: 100px;" id="ball">
+                 <div class="" data-block-type="image" style="position: absolute; top: 100px; left: 100px;" id="rscBall">
                 <img src="images/ball.png" alt="">
-                 </div>
-                 <div onclick="stopBall();Reveal.next()" class="" style="position: absolute; left: 200px; top: 400px">
-                     
-                        <img src="images/дрель.png" alt="">
-                    
                  </div>
             </section>
             <section class="future" style="display: block;" data-index-h="3" hidden="" aria-hidden="true">
@@ -230,7 +225,9 @@
   				height: 720,
 				controls: false,
 				center: false,
-				jumpToSlide: true
+				jumpToSlide: true,
+                transition: 'none',
+                backgroundTransition: 'none',
 			});
 		</script>
 	</body>

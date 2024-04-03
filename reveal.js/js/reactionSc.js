@@ -1,49 +1,77 @@
-
-
-function End(){
-    ball.style.left = 100+'px';
-    Reveal.next();
-}
-
-function timeDisplay(){  
-    //здесь нужные объекты находятся по id в свойствах
-    let textOfButton = document.getElementById("textButtonQuestion")
-    let button1 = document.getElementById('imageButtonQuestion2')
-    let button2 = document.getElementById('imageButtonQuestion2')
-    let ball = document.getElementById("ball")
-    let reactionCheck = document.getElementById("reactionCheck")
-    //i - здесь координата ball.left;
-    let i =  1
-    //здесь при вызове этой функции кнопка становится прозрачной и не рабочей
-    button2.onclick="return false";
-    textOfButton.style.opacity = 0;
-    button1.style.opacity = 0;
-    
-    //функция вызывающаяся каждую ms
-        function update(now){
-            //значение показывающее необходимость обновления кадра с шаром (true - шар движется)
-            let needRAF = false
-            //значение i += n, где n - то, с какой скоростью будет двигаться шар (шар совершит столько передвижений, сколько будет 1000/n; - каждое движение - 1ms) 
-            i += 10;
-            ball.style.left = i+'px';
-            //проверка на то, завершил ли шар свое движение (если завершил - бесконечный цикл обновления кадра завершается)
-            if(i<= 1000){
-                needRAF = true
-            }
-            if(needRAF){requestAnimationFrame(update)}
-            else{
-            end();
-            }
-            
-        }
-    requestAnimationFrame(update)
-}
-    function stopBall(){
-        needRAF = false
-        //НЕ РАБОТАЕТ Т.К. b.s.l - px, а нужны числа. Пробуй GetANum
-        if(ball.style.left <= 500+'px' && ball.style.left >= 100+'px'){
-            reactionCheck.textContent = "сбежали";
-        } else{ reactionCheck.textContent = "были пойманы"}
+    const textOfButton = document.getElementById("rscTextofButton")
+    const button1 = document.getElementById('rscButton1')
+    const button2 = document.getElementById('rscButton2')
+    const ball = document.getElementById("rscBall")
+    //var slideMap = document.getElementById('SlideMap');
+    //var slideMapInd = Reveal.getIndices(slideMap)
+    var canEnd = true
+    var i = 100;
+    var needRAF = false
+    var badEnd = false
+    var sF = true
+    function switchFunc(){
+        alert('ФУНКЦИЯ ГОВНА')
+      if(sF) {
+        timeDisplay()
+        sF = false
+        textOfButton.textContent =  "БЕЖАТЬ"
+      }
+      else{
+        stopButton()
+        sF= true
+        textOfButton.textContent =  "Попытаться сбежать"
+        canEnd = true
+      }
     }
 
+    function timeDisplay() {
+        needRAF = true;       
+     function update(now){
+            if(parseInt(ball.style.left) >= 1000){needRAF = false}
+            if(needRAF){
+                i += 10;
+                ball.style.left = i+'px'
+            requestAnimationFrame(update)    
+            }
+            else{
+            badEnd = true
+            if(canEnd){
+            end()
+            }
+            
+            }
+        } 
+        requestAnimationFrame(update)  
+        
+        console.log(parseInt(ball.style.left))
+    }
 
+    function stopButton(){
+        alert('ФУНКЦИЯ КОНЦА ВСЕГО')
+        needRAF = false
+        if(canEnd){
+          end();
+        }
+        
+        if(parseInt(ball.style.left) <= 1000 && parseInt(ball.style.left) >= 600)
+        {badEnd= false} 
+        else
+        {badEnd= true}    
+    }
+
+    function end(){
+        alert('ФУНКЦИЯ ХУЙ ПИЗДА ГОВНО')
+        i = 100
+        needRAF = false
+        ball.style.left = 100+'px'
+        canEnd = false
+      
+        if(badEnd)
+        {
+        alert("к грнк")
+        }
+        else
+        {
+        Reveal.next();
+        } 
+    }
