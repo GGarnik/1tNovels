@@ -1,4 +1,14 @@
-button {
-    height: 5rem;
-    width: 15rem;
+.examplebtn {
+  font-size: 15px;
+  color: #ffffff !important;
+  padding: 9px 25px;
+  border-radius: 5px;
+  border: 2px ridge #4f4f4f;
+  background: #009999;
+  text-align: left;
+}
+.examplebtn:hover {
+  color: #cccccc !important;
+  background: #009999;
+  background: linear-gradient(to top, #1d7373, #1d7373);
 }
