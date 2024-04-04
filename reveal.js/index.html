@@ -19,6 +19,14 @@
 	<body>
     <div class="reveal">
         <div class="slides">
+            <section>
+				
+						
+                <div class = "out">Выберите имя игрока:</div>
+                <input type="text" class="input_text">
+                <button onclick="button_input(); textTypingEffect(div, text)">Принять имя</button>
+                
+            </section>
 			<!--СЛАЙД 1-->
             <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none">
                 <!-- Основное диалоговое окно: -->
@@ -52,7 +60,7 @@
                     </div>
                 </div>
 				<!-- Спрайты: (margin-left отвечает за положение спрайта по горизонтали) -->
-                <div class="" data-block-type="image" onclick="Reveal.next()" style="position: absolute; width: 471.2px; height: 706.8px; top: 540px; min-width: 1px; min-height: 1px; margin-top: -495px; margin-left: 350px;">
+                <div class="" data-block-type="image" onclick="Reveal.next(); reInitText()" style="position: absolute; width: 471.2px; height: 706.8px; top: 540px; min-width: 1px; min-height: 1px; margin-top: -495px; margin-left: 350px;">
                     <div class="" filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
 						<!-- Спрайт Джесси: -->
                         <div class="imgnoevent spiteCharacter" position="relative"><img class="" data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Джесси.png"></div>
@@ -94,7 +102,7 @@
                     </div>
                 </div>
 				<!-- Спрайты: (margin-left отвечает за положение спрайта по горизонтали) -->
-                <div class="" data-block-type="image" onclick="Reveal.next()" style="position: absolute; width: 471.2px; height: 706.8px; left: -100px; top: 540px; min-width: 1px; min-height: 1px; margin-top: -495px; margin-left: 350px;">
+                <div class="" data-block-type="image" onclick="Reveal.next(); reInitText()" style="position: absolute; width: 471.2px; height: 706.8px; left: -100px; top: 540px; min-width: 1px; min-height: 1px; margin-top: -495px; margin-left: 350px;">
                     <div class="" filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
 						<!-- Спрайт Джесси: -->
                         <div class="imgnoevent spiteCharacter" position="relative"><img class="" data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Джесси.png"></div>
@@ -108,7 +116,7 @@
                 МИНИИГРА С КАРТОЙ
                 canClickInit(); - НЕ ЗАБЫТЬ ДОБАВИТЬ В ПРЕДЫДУЩИЙ СЛАЙД
             -->
-            <section>
+            <section id="SlideMap">
                 <img data-src="images/player.png" class="imgnoevent" style="padding-top: 275px;">
                 <div style="position: relative; top: -425px; left: 48%;  z-index: 2;" >
                     <img id="map" data-src="images/Labyrinth.png" class="imgnoevent map" style="width: 20%; height: 20%;">
@@ -150,13 +158,13 @@
             
 
             <!-- РЕАКЦИЯ (ДРЕЛЬ) -->
-            <section data-background="#000000" id="3rd Slide" class="has-dark-background present" style="display: block;" data-index-h="2">
+            <section id="3rd Slide" data-background="#000000"  class="has-dark-background present" style="display: block;" data-index-h="2" data-transition="none" data-background-transition="none">
                 <div>
-                    <div class="imgnoevent textSmall" data-block-type="text" style="color: rgb(255, 255, 255); position: absolute; top: 350px; left: 252px; " id="textButtonQuestion">
-                    <span><strong>Нажмите, чтобы пройти проверку на реакции</strong></span>
+                    <div class="imgnoevent textSmall" data-block-type="text" style="color: rgb(255, 255, 255); position: absolute; top: 350px; left: 252px; " id="rscTextofButton">
+                    <span><strong>Попытаться сбежать</strong></span>
                     </div>
-                    <div class="" data-block-type="image" style="position: absolute; top: 325px; left:200px; " id="imageButtonQuestion1">
-                        <img onclick="timeDisplay()" class="" data-natural-width="400" data-natural-height="30" id="imageButtonQuestion2" src="images/кнопка.png" data-lazy-loaded="" style="">
+                    <div onclick="switchFunc()" class="" data-block-type="image" style="position: absolute; top: 325px; left:200px; " id="rscButton2">
+                        <img  class="imgnoevent" data-natural-width="400" data-natural-height="30" id="rscButton1" src="images/кнопка.png" data-lazy-loaded="" style="">
                     </div>
                 </div>
                  <div class="imgnoevent" data-block-type="image" style="position: absolute; left: 50px; top:95px">
@@ -166,19 +174,9 @@
                     <img src="images/ballLimit(400px).png" alt="">
                  </div>
                 
-                 <div class="" data-block-type="image" style="position: absolute; top: 100px; left: 100px;" id="ball">
+                 <div class="imgnoevent" data-block-type="image" style="position: absolute; top: 100px; left: 100px;" id="rscBall">
                 <img src="images/ball.png" alt="">
                  </div>
-                 <div onclick="stopBall();Reveal.next()" class="" style="position: absolute; left: 200px; top: 400px">
-                     
-                        <img src="images/дрель.png" alt="">
-                    
-                 </div>
-            </section>
-            <section class="future" style="display: block;" data-index-h="3" hidden="" aria-hidden="true">
-                <div class="textMain" data-block-type="text">
-                    <p>Вы <span id="reactionCheck"></span></p>
-                </div>
             </section>
 
             <!-- ВОПРОСЫ (ТЕСТ) -->
@@ -230,13 +228,16 @@
   				height: 720,
 				controls: false,
 				center: false,
-				jumpToSlide: true
+				jumpToSlide: true,
+                transition: 'none',
+                backgroundTransition: 'none',
 			});
 		</script>
 
         <script>
             let div = document.querySelector(".animatedTxt");
             let text = div.textContent;
+            text = text.trim(" ");
 
             function textTypingEffect(element, text, i = 0) {
                 if (i === 0) {
@@ -255,11 +256,28 @@
                 div.className -= "animatedTxt";
                 div = document.querySelector(".animatedTxt");
                 text = div.textContent;
-                console.log(div.textContent);
+                text = text.trim(" ");
+
+                console.log(text);
                 textTypingEffect(div, text);
             }
-
-            textTypingEffect(div, text);
+            //создаем вызов в первом слайде для ui что бы получать и выводить текст
+			//функция где получем из type получаем имя игрока и записываем в переменную
+			function button_input(){
+				//document.querySelector(".out").innerHTML = "введи имя";
+				//console.log(document.querySelector(".input_text").value)
+				const name_player = document.querySelector(".input_text").value;
+				if( name_player == ""|| name_player==" "){
+					alert("введите имя")
+					return;
+				}
+				else{
+					//document.querySelector(".out").innerHTML = name_player;
+					console.log(name_player);
+					Reveal.slide(1)
+					//document.querySelector(".out_name_next").innerHTML = name_player
+				}
+			}
         </script>
 	</body>
 </html>

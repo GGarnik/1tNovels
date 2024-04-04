@@ -59,6 +59,7 @@ function arrowRight() {
             canClickInit();
         } else {
             console.log("НЕПРАВИЛЬНО");
+            Reveal.next();
             falseCounter++
         }
     }
@@ -72,6 +73,7 @@ function arrowUp() {
             canClickInit();
         } else {
             console.log("НЕПРАВИЛЬНО");
+            Reveal.next();
             falseCounter++
         }
     }
@@ -85,6 +87,7 @@ function arrowDown() {
             canClickInit();
         } else {
             console.log("НЕПРАВИЛЬНО");
+            Reveal.next();
             falseCounter++
         }
     }
@@ -98,6 +101,7 @@ function arrowLeft() {
             canClickInit();
         } else {
             console.log("НЕПРАВИЛЬНО");
+            Reveal.next();
             falseCounter++
         }
     }
