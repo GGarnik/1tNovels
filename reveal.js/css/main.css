@@ -19,29 +19,57 @@
     user-select: none;
 }
 
-.spiteCharacter {
-    position: relative;
+
+.spriteCharacter {
+    position: absolute; 
+    min-width: 1px; 
+    min-height: 1px; 
     z-index: -2;
+}
+  
+.jessi1 {
+    position: absolute; 
+    top: calc(100vh - 775px);
+    left: 660px;
+    width: 530px; 
+    height: 870px; 
 }
 
 .spriteTalkWindowBig {
-    position: relative;
+    position: absolute; 
     z-index: -1;
+    width: 1246px; 
+    height: 193px; 
+    left: 330px; 
+    top: calc(100vh - 210px);
+    animation: none;
 }
 
 .spriteTalkWindowSmall {
-    position: relative;
+    position: absolute; 
     z-index: -1;
+    width: 222px; 
+    height: 52px; 
+    left: 345px;
+    top: calc(100vh - 257px);
 }
 
 .textMain {
-    position: relative;
+    position: absolute;
+    height: auto; 
+    width: 1200px;
     z-index: 4;
+    left: 350px; 
+    top: calc(100vh - 205px);
 }
 
 .textSmall {
-    position: relative;
+    position: absolute;
+    height: auto; 
+    width: 600px;
     z-index: 3;
+    left: 365px;
+    top: calc(100vh - 273px);
 }
 
 .button {

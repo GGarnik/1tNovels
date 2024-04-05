@@ -19,19 +19,19 @@
 	<body>
     <div class="reveal">
         <div class="slides">
-            <section >Первый слайд. Конфиги уже настроены. На первом слайде должен быть выбор ника игрока.
+            <section>
 				
 						
-                <div class = "out"> имя игрока</div>
+                <div class = "out">Выберите имя игрока:</div>
                 <input type="text" class="input_text">
-                <button onclick="button_input()">Принять имя</button>
+                <button onclick="button_input(); textTypingEffect(div, text)">Принять имя</button>
                 
             </section>
 			<!--СЛАЙД 1-->
-            <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none">
+            <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
                 <!-- Основное диалоговое окно: -->
-				<div class="spriteTalkWindowBig" onclick="Reveal.next(); reInitText()" data-block-type="shape" style="position: absolute; width: 1246px; height: 193px; left: 15px; top: 0px; margin-top: 520px; margin-left: -10px;"><a class="" data-shape-type="rect" data-shape-fill-color="rgba(46, 38, 38, 0.55)" data-shape-stretch="true" data-shape-stroke-color="#403a3a" data-shape-stroke-width="6px" data-shape-corner-radius="23px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1246 193">
-                            <defs>
+                <div class="spriteTalkWindowBig" onclick="Reveal.next(); reInitText()" data-block-type="shape"><a class="" data-shape-type="rect" data-shape-fill-color="rgba(46, 38, 38, 0.55)" data-shape-stretch="true" data-shape-stroke-color="#403a3a" data-shape-stroke-width="6px" data-shape-corner-radius="23px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1246 193">
+                        <defs>
                                 <clipPath id="shape-mask-1-1709993187659">
                                     <rect width="1246" height="193" rx="23" ry="23" fill="rgba(46, 38, 38, 0.55)" stroke="#403a3a" stroke-width="12"></rect>
                                 </clipPath>
@@ -39,7 +39,7 @@
                             <rect width="1246" height="193" rx="23" ry="23" class="shape-element" fill="rgba(46, 38, 38, 0.55)" stroke="#403a3a" stroke-width="12" clip-path="url(#shape-mask-1-1709993187659)"></rect>
                         </svg></a></div>
 				<!-- Маленькое окно над диалоговым: -->
-                <div class="spriteTalkWindowSmall" data-block-type="shape" style="position: absolute; width: 222px; height: 52px; margin-top: 474px; margin-left: 10px;"><a class="" data-shape-type="rect" data-shape-fill-color="rgba(46, 38, 38, 0.55)" data-shape-stretch="true" data-shape-stroke-color="#403a3a" data-shape-stroke-width="6px" data-shape-corner-radius="23px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 222 52">
+                <div class="spriteTalkWindowSmall" data-block-type="shape"><a data-shape-type="rect" data-shape-fill-color="rgba(46, 38, 38, 0.55)" data-shape-stretch="true" data-shape-stroke-color="#403a3a" data-shape-stroke-width="6px" data-shape-corner-radius="23px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 222 52">
                             <defs>
                                 <clipPath id="shape-mask-2-1709993579483">
                                     <rect width="222" height="52" rx="23" ry="23" fill="rgba(46, 38, 38, 0.55)" stroke="#403a3a" stroke-width="12"></rect>
@@ -48,32 +48,32 @@
                             <rect width="222" height="52" rx="23" ry="23" class="shape-element" fill="rgba(46, 38, 38, 0.55)" stroke="#403a3a" stroke-width="12" clip-path="url(#shape-mask-2-1709993579483)"></rect>
                         </svg></a></div>
 				<!-- Текст ВНУТРИ диалогового окна: -->
-                <div class="" data-block-type="text" onclick="Reveal.next(); reInitText()" style="position: absolute; height: auto; width: 1200px; top: 545px; margin-top: -20px; margin-left: 20px;" >
-                        <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%; transform-origin: 0% 50% 0px; transition-duration: 0.6s; transition-delay: 0.6s;">
+                <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                        <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
                             <p><text style="color:#FFFFFF">Где это мы?</text></p>
                         </div>
                         </div>
 				<!-- Кто говорит: -->
-                <div class="" data-block-type="text" style="position: absolute; height: auto; width: 600px; top: 578px; margin-left: 30px; margin-top: -122px;">
+                <div data-block-type="text">
                     <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
                         <p><span style="color:#FFFFFF"><strong>Джесси</strong></span></p>
                     </div>
                 </div>
-				<!-- Спрайты: (margin-left отвечает за положение спрайта по горизонтали) -->
-                <div class="" data-block-type="image" onclick="Reveal.next()" style="position: absolute; width: 471.2px; height: 706.8px; top: 540px; min-width: 1px; min-height: 1px; margin-top: -495px; margin-left: 350px;">
-                    <div class="" filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+				<!-- Спрайты: -->
+                <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                    <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
 						<!-- Спрайт Джесси: -->
-                        <div class="imgnoevent spiteCharacter" position="relative"><img class="" data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Джесси.png"></div>
+                        <div data-id="jessi" class="imgnoevent jessi1"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Джесси.png"></div>
                     </div>
                 </div>
             </section>
 
 
 			<!--СЛАЙД 2-->
-            <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none">
+            <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
                 <!-- Основное диалоговое окно: -->
-				<div class="spriteTalkWindowBig" onclick="Reveal.next(); reInitText()" data-block-type="shape" style="position: absolute; width: 1246px; height: 193px; left: 15px; top: 0px; margin-top: 520px; margin-left: -10px;"><a class="" data-shape-type="rect" data-shape-fill-color="rgba(46, 38, 38, 0.55)" data-shape-stretch="true" data-shape-stroke-color="#403a3a" data-shape-stroke-width="6px" data-shape-corner-radius="23px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1246 193">
-                            <defs>
+                <div class="spriteTalkWindowBig" onclick="Reveal.next(); reInitText()" data-block-type="shape"><a class="" data-shape-type="rect" data-shape-fill-color="rgba(46, 38, 38, 0.55)" data-shape-stretch="true" data-shape-stroke-color="#403a3a" data-shape-stroke-width="6px" data-shape-corner-radius="23px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1246 193">
+                        <defs>
                                 <clipPath id="shape-mask-1-1709993187659">
                                     <rect width="1246" height="193" rx="23" ry="23" fill="rgba(46, 38, 38, 0.55)" stroke="#403a3a" stroke-width="12"></rect>
                                 </clipPath>
@@ -81,7 +81,7 @@
                             <rect width="1246" height="193" rx="23" ry="23" class="shape-element" fill="rgba(46, 38, 38, 0.55)" stroke="#403a3a" stroke-width="12" clip-path="url(#shape-mask-1-1709993187659)"></rect>
                         </svg></a></div>
 				<!-- Маленькое окно над диалоговым: -->
-                <div class="spriteTalkWindowSmall" data-block-type="shape" style="position: absolute; width: 222px; height: 52px; margin-top: 474px; margin-left: 10px;"><a class="" data-shape-type="rect" data-shape-fill-color="rgba(46, 38, 38, 0.55)" data-shape-stretch="true" data-shape-stroke-color="#403a3a" data-shape-stroke-width="6px" data-shape-corner-radius="23px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 222 52">
+                <div class="spriteTalkWindowSmall" data-block-type="shape"><a data-shape-type="rect" data-shape-fill-color="rgba(46, 38, 38, 0.55)" data-shape-stretch="true" data-shape-stroke-color="#403a3a" data-shape-stroke-width="6px" data-shape-corner-radius="23px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 222 52">
                             <defs>
                                 <clipPath id="shape-mask-2-1709993579483">
                                     <rect width="222" height="52" rx="23" ry="23" fill="rgba(46, 38, 38, 0.55)" stroke="#403a3a" stroke-width="12"></rect>
@@ -90,22 +90,22 @@
                             <rect width="222" height="52" rx="23" ry="23" class="shape-element" fill="rgba(46, 38, 38, 0.55)" stroke="#403a3a" stroke-width="12" clip-path="url(#shape-mask-2-1709993579483)"></rect>
                         </svg></a></div>
 				<!-- Текст ВНУТРИ диалогового окна: -->
-                <div class="" data-block-type="text" onclick="Reveal.next(); reInitText()" style="position: absolute; height: auto; width: 1200px; top: 545px; margin-top: -20px; margin-left: 20px;" >
-                        <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%; transform-origin: 0% 50% 0px; transition-duration: 0.6s; transition-delay: 0.6s;">
+                <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                        <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
                             <p><text style="color:#FFFFFF">Это уже второй слайд!</text></p>
                         </div>
                         </div>
 				<!-- Кто говорит: -->
-                <div class="" data-block-type="text" style="position: absolute; height: auto; width: 600px; top: 578px; margin-left: 30px; margin-top: -122px;">
+                <div data-block-type="text">
                     <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
                         <p><span style="color:#FFFFFF"><strong>Джесси</strong></span></p>
                     </div>
                 </div>
-				<!-- Спрайты: (margin-left отвечает за положение спрайта по горизонтали) -->
-                <div class="" data-block-type="image" onclick="Reveal.next()" style="position: absolute; width: 471.2px; height: 706.8px; left: -100px; top: 540px; min-width: 1px; min-height: 1px; margin-top: -495px; margin-left: 350px;">
-                    <div class="" filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+				<!-- Спрайты: -->
+                <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                    <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
 						<!-- Спрайт Джесси: -->
-                        <div class="imgnoevent spiteCharacter" position="relative"><img class="" data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Джесси.png"></div>
+                        <div data-id="jessi" class="imgnoevent jessi1" style="left: 560px"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Джесси.png"></div>
                     </div>
                 </div>
             </section>
@@ -116,6 +116,8 @@
                 МИНИИГРА С КАРТОЙ
                 canClickInit(); - НЕ ЗАБЫТЬ ДОБАВИТЬ В ПРЕДЫДУЩИЙ СЛАЙД
             -->
+
+            <!-- НЕ ТРОГАТЬ!!
             <section id="SlideMap">
                 <img data-src="images/player.png" class="imgnoevent" style="padding-top: 275px;">
                 <div style="position: relative; top: -425px; left: 48%;  z-index: 2;" >
@@ -157,14 +159,14 @@
             </section>
             
 
-            <!-- РЕАКЦИЯ (ДРЕЛЬ) -->
+            РЕАКЦИЯ (ДРЕЛЬ)
             <section id="3rd Slide" data-background="#000000"  class="has-dark-background present" style="display: block;" data-index-h="2" data-transition="none" data-background-transition="none">
                 <div>
                     <div class="imgnoevent textSmall" data-block-type="text" style="color: rgb(255, 255, 255); position: absolute; top: 350px; left: 252px; " id="rscTextofButton">
                     <span><strong>Попытаться сбежать</strong></span>
                     </div>
                     <div onclick="switchFunc()" class="" data-block-type="image" style="position: absolute; top: 325px; left:200px; " id="rscButton2">
-                        <img  class="" data-natural-width="400" data-natural-height="30" id="rscButton1" src="images/кнопка.png" data-lazy-loaded="" style="">
+                        <img  class="imgnoevent" data-natural-width="400" data-natural-height="30" id="rscButton1" src="images/кнопка.png" data-lazy-loaded="" style="">
                     </div>
                 </div>
                  <div class="imgnoevent" data-block-type="image" style="position: absolute; left: 50px; top:95px">
@@ -174,12 +176,12 @@
                     <img src="images/ballLimit(400px).png" alt="">
                  </div>
                 
-                 <div class="" data-block-type="image" style="position: absolute; top: 100px; left: 100px;" id="rscBall">
+                 <div class="imgnoevent" data-block-type="image" style="position: absolute; top: 100px; left: 100px;" id="rscBall">
                 <img src="images/ball.png" alt="">
                  </div>
             </section>
 
-            <!-- ВОПРОСЫ (ТЕСТ) -->
+            ВОПРОСЫ (ТЕСТ)
             <section>
             <script src = 'js/pull.js'></script>
     
@@ -187,8 +189,8 @@
             <div id="question"></div>
             <div id="answers"></div> 
 				
-            <!-- Тут точно будет пул вопросов... -->
-			</section>
+            Тут точно будет пул вопросов...
+			</section> -->
 			
 
             
@@ -200,6 +202,8 @@
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
+        
+        <!--
         <script src="js/reactionSc.js"></script>
         <script src="dist/mapgame.js"></script>
 
@@ -212,7 +216,10 @@
 		crossorigin="anonymous"></script>
 	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
 		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-		crossorigin="anonymous"></script>
+		
+        crossorigin="anonymous"></script>
+        -->
+
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
@@ -231,12 +238,14 @@
 				jumpToSlide: true,
                 transition: 'none',
                 backgroundTransition: 'none',
+                disableLayout: true
 			});
 		</script>
 
         <script>
             let div = document.querySelector(".animatedTxt");
             let text = div.textContent;
+            text = text.trim(" ");
 
             function textTypingEffect(element, text, i = 0) {
                 if (i === 0) {
@@ -255,7 +264,9 @@
                 div.className -= "animatedTxt";
                 div = document.querySelector(".animatedTxt");
                 text = div.textContent;
-                console.log(div.textContent);
+                text = text.trim(" ");
+
+                console.log(text);
                 textTypingEffect(div, text);
             }
             //создаем вызов в первом слайде для ui что бы получать и выводить текст
@@ -275,7 +286,6 @@
 					//document.querySelector(".out_name_next").innerHTML = name_player
 				}
 			}
-            textTypingEffect(div, text);
         </script>
 	</body>
 </html>
