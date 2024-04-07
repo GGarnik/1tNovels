@@ -6,6 +6,7 @@
 
 		<title>reveal.js</title>
 
+        <link rel="stylesheet" href="css/limbo.css">
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
 		<link rel="stylesheet" href="dist/theme/black.css">
@@ -67,8 +68,6 @@
                     </div>
                 </div>
             </section>
-
-
 			<!--СЛАЙД 2-->
             <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
                 <!-- Основное диалоговое окно: -->
@@ -110,7 +109,40 @@
                 </div>
             </section>
 
+            <!-- Слайд с выбором развилки сюжета-->
+            <section data-background-color="black" data-background-opacity="0.8" data-background-image="images/подворотня4.png"  >
+            <div class="mainChoise"> <span class="imgnoevent" style="position:relative; left: 13vw; ">Что выбрать?</span> 
+            <button class="mainChoiseButton" style="left: -235px;"  onclick="Reveal.next(); Reveal.next()" ><p>Пойти по закаулкам</p></button>
+            <button class="mainChoiseButton" style="left: -20px;" onclick="Reveal.next()"><p>Пойти по главной улице</p></button>
+            </div>
             
+            </section>
+            <!-- Section, в котором находятся вертикальные слайды развилки улиц -->
+            <section> 
+            <section><h1>Выбор улиц</h1></section>
+            <section><h1>1слайд улицы</h1></section>
+            </section>
+
+            <!-- Section, в котором находятся вертикальные слайды развилки переулков -->
+            <section> 
+                <section> Выбор закаулков</section>
+                <section> 1слайд закаулков </section>
+            </section>
+            
+            <!-- <section>
+                <button class="testButton" onclick=""></button>
+                <div class="limboBox">
+                    <div id="limbo1" class="limboObject" style="left: 150px; top: 100px;"></div>
+                    <div id="limbo2" class="limboObject" style="left: 350px; top: 100px;"></div>
+                    <div id="limbo3" class="limboObject" style="left: 550px; top: 100px;"></div>
+                    <div id="limbo4" class="limboObject" style="left: 750px; top: 100px;"></div>
+                    <div id="limbo5" class="limboObject" style="left: 150px; top: 250px;"></div>
+                    <div id="limbo6" class="limboObject" style="left: 350px; top: 250px;"></div>
+                    <div id="limbo7" class="limboObject" style="left: 550px; top: 250px;"></div>
+                    <div id="limbo8" class="limboObject" style="left: 750px; top: 250px;"></div>
+                </div>
+            </section>
+             -->
             
             <!-- ДОБАВЛЯТЬ СЛАЙДЫ !ТОЛЬКО ДО МИНИИГРЫ!
                 МИНИИГРА С КАРТОЙ
