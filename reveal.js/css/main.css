@@ -4,7 +4,10 @@
 .blackimage {
     filter: brightness(70%);
 }
-
+.blackBackground{
+    background-color: black;
+    opacity: 0.7;
+}
 /* Шрифт (НЕ ТРОГАТЬ) */
 .slides {
     font-family: "IBM Plex Serif:500";
@@ -18,8 +21,44 @@
     -ms-user-select: none; 
     user-select: none;
 }
-
-
+.limboBox{
+    position: absolute;
+    left: calc(50% - 500px);
+    top: 7vw;
+    width: 1000px;
+    height: 400px;
+    background-color: black;
+}
+.testButton{
+    width: 100px;
+    height: 100px;
+}
+.limboObject{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+}
+.mainChoise{
+    filter: brightness(100%);
+    position: absolute;
+    left: calc(50% - 400px);
+    top: 4vw;
+    width: 800px;
+    height: 200px;
+    background-color: black;
+    color: blanchedalmond;
+}
+.mainChoiseButton{
+    filter: brightness(100%);
+    position: relative;
+    top: 100px;
+    width: 250px;
+    height: 80px;
+    color: #FFFF;
+    background-color: black;
+    box-shadow: #FFFF;
+}
 .spriteCharacter {
     position: absolute; 
     min-width: 1px; 
