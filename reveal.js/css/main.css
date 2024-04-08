@@ -69,7 +69,7 @@
 .jessi1 {
     position: absolute; 
     top: calc(100vh - 775px);
-    left: 660px;
+    left: calc(50vw - 290px);
     width: 530px; 
     height: 870px; 
 }
@@ -79,7 +79,7 @@
     z-index: -1;
     width: 1246px; 
     height: 193px; 
-    left: 330px; 
+    left: calc(50vw - 630px);
     top: calc(100vh - 210px);
     animation: none;
 }
@@ -89,8 +89,13 @@
     z-index: -1;
     width: 222px; 
     height: 52px; 
-    left: 345px;
+    left: calc(50vw - 615px);
     top: calc(100vh - 257px);
+}
+
+.windowSmall2 {
+    position: absolute; 
+    top: -7px;
 }
 
 .textMain {
@@ -98,7 +103,7 @@
     height: auto; 
     width: 1200px;
     z-index: 4;
-    left: 350px; 
+    left: calc(50vw - 610px);
     top: calc(100vh - 205px);
 }
 
@@ -107,7 +112,7 @@
     height: auto; 
     width: 600px;
     z-index: 3;
-    left: 365px;
+    left: calc(50vw - 595px);
     top: calc(100vh - 273px);
 }
 
