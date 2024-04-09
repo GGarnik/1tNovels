@@ -112,7 +112,7 @@
             <!-- Слайд с выбором развилки сюжета-->
             <section data-background-color="black" data-background-opacity="0.8" data-background-image="images/подворотня4.png"  >
             <div class="mainChoise"> <span class="imgnoevent" style="position:relative; left: 13vw; ">Что выбрать?</span> 
-            <button class="mainChoiseButton" style="left: -235px;"  onclick="Reveal.next(); Reveal.next()" ><p>Пойти по закаулкам</p></button>
+            <button class="mainChoiseButton" style="left: -235px;"  onclick="Reveal.slide(5);" ><p>Пойти по закаулкам</p></button>
             <button class="mainChoiseButton" style="left: -20px;" onclick="Reveal.next()"><p>Пойти по главной улице</p></button>
             </div>
             
@@ -121,13 +121,2194 @@
             <!-- Section, в котором находятся вертикальные слайды развилки улиц -->
             <section> 
             <section><h1>Выбор улиц</h1></section>
-            <section><h1>1слайд улицы</h1></section>
+            <section><p>1слайд улицы</p></section>
             </section>
 
             <!-- Section, в котором находятся вертикальные слайды развилки переулков -->
-            <section> 
-                <section> Выбор закаулков</section>
-                <section> 1слайд закаулков </section>
+            <section>
+
+
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">В переулках действительно меньше вероятность встретить патрульных меньше, так что пойдем через них</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF" id='name_player'><strong ></strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div  class="imgnoevent jessi1 blackimage" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Стартов.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Ребят. Там силуэт впереди</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Вира</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Вира2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">И кажется он стремительно приближается!</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Вира</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="startov" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Вира2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Это скорее всего легионеры, бежим!</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Джесси</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="startov" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Джесси.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Направо!</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Пай</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Пай.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Забегайте быстрее!!</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Незнакомец</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Каин2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Еще чу-чуть и вам бы ОЙ КАК НЕ ПОВЕЗЛО.</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Незнакомец</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Каин2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Очень благодарим за помощь. Разрешите представится</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Стартов</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Вира2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Очень благодарим за помощь. Разрешите представится</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Стартов</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Стартов.png"></div>
+                        </div>
+                    </div>
+                </section>
+            
+                        <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                            <!-- Основное диалоговое окно: -->
+                            <h1 class=""></h1>
+                            <!-- Маленькое окно над диалоговым: -->
+                            <h2 class="windowSmall2"></h2>
+                            <!-- Текст ВНУТРИ диалогового окна: -->
+                            <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                                    <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                        <p><text style="color:#FFFFFF">Не разрешу, мы еще не в безопасности. Для начала я провожу вас до лагеря наших. Оттуда мы уже как 2 часа наблюдаем за вашим прибытием</text></p>
+                                    </div>
+                                    </div>
+                            <!-- Кто говорит: -->
+                            <div data-block-type="text">
+                                <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                                    <p><span style="color:#FFFFFF"><strong>Незнакомец</strong></span></p>
+                                </div>
+                            </div>
+                            <!-- Спрайты: -->
+                            <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                                <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                                    <!-- Спрайт Джесси: -->
+                                    <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Каин2.png"></div>
+                                </div>
+                            </div>
+                        </section>
+                        <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                            <!-- Основное диалоговое окно: -->
+                            <h1 class=""></h1>
+                            <!-- Маленькое окно над диалоговым: -->
+                            <h2 class="windowSmall2"></h2>
+                            <!-- Текст ВНУТРИ диалогового окна: -->
+                            <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                                    <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                        <p><text style="color:#FFFFFF">Очень благодарим за помощь. Разрешите представится</text></p>
+                                    </div>
+                                    </div>
+                            <!-- Кто говорит: -->
+                            <div data-block-type="text">
+                                <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                                    <p><span style="color:#FFFFFF"><strong>Стартов</strong></span></p>
+                                </div>
+                            </div>
+                            <!-- Спрайты: -->
+                            <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                                <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                                    <!-- Спрайт Джесси: -->
+                                    <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Стартов.png"></div>
+                                </div>
+                            </div>
+                        </section>
+                    
+                    <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                        <!-- Основное диалоговое окно: -->
+                        <h1 class=""></h1>
+                        <!-- Маленькое окно над диалоговым: -->
+                        <h2 class="windowSmall2"></h2>
+                        <!-- Текст ВНУТРИ диалогового окна: -->
+                        <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                                <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                    <p><text style="color:#FFFFFF">А теперь всем вести себя тихо. Болтливость здесь не поощряется</text></p>
+                                </div>
+                                </div>
+                        <!-- Кто говорит: -->
+                        <div data-block-type="text">
+                            <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                                <p><span style="color:#FFFFFF"><strong>Незнакомец</strong></span></p>
+                            </div>
+                        </div>
+                        <!-- Спрайты: -->
+                        <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                            <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                                <!-- Спрайт Джесси: -->
+                                <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Каин2.png"></div>
+                            </div>
+                        </div>
+                    </section>
+                    <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                        <!-- Основное диалоговое окно: -->
+                        <h1 class=""></h1>
+                        <!-- Маленькое окно над диалоговым: -->
+                        <h2 class="windowSmall2"></h2>
+                        <!-- Текст ВНУТРИ диалогового окна: -->
+                        <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                                <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                    <p><text style="color:#FFFFFF">Очень благодарим за помощь. Разрешите представится</text></p>
+                                </div>
+                                </div>
+                        <!-- Кто говорит: -->
+                        <div data-block-type="text">
+                            <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                                <p><span style="color:#FFFFFF"><strong>Стартов</strong></span></p>
+                            </div>
+                        </div>
+                        <!-- Спрайты: -->
+                        <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                            <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                                <!-- Спрайт Джесси: -->
+                                <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Стартов.png"></div>
+                            </div>
+                        </div>
+                    </section>
+                
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Ну что, довел их без приключений?</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Незнакомец2</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Адам2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Разве что спас их от отряда с места наблюдения</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Незнакомец</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Каин2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Молодец! Вам повезло, что вы попали к нам, а не к уличному патрулю. Они бы так профессионально среагировать не смогли бы!</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Незнакомец2</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Адам2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Ну что Адам? Еще одна группа выживших?</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Незнакомая Девушка</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Ева2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Давайте хоть знакомиться. Меня зовут Санура. А это,  ((поворачиваясь к незнакомцу)) 2 как вы уже поняли у нас Адам.</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Санура</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Ева2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Да, а вас спас наш сын Каин</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Адам</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Адам.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Приятно познакомится! Меня зовут Джесси, а это: *по очереди показывая на каждого члена команды* Пай, Стартов, Вира и <span id='playerName'></span></text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Джесси</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src=""></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Здравствуйте</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Пай</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Пай1.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Привет</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Вира</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Вира2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Привет</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong id="name_player"></strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Каин2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Благодарю за встречу. Позвольте поинтересоваться: как вы узнали, что нам прямо в тот момент понадобилась помощь?</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Стартов</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Стартов.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Мы давно за вами следили. Почти с момента, как вы пошли в сторону центра</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Санура</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Ева2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Сначала, мы думали вы продолжите идти по главной улице, и тогда ваша судьба была бы под совестью уличного дозора. Но все таки вам повезло попасть к нам.</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Адам</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Адам2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Погодите, уличный дозор? Город же весь подвергся влиянию вируса, за кем они ведут дозор?</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Пай</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Пай1.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">За такими же несчастными, как и вы, которым не повезло оказаться без укрытия в городе.</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Санура</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Ева2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Во время эпидемии и начала сильного контроля со стороны легионеров, наша община решила помогать всем оставшимся беглецам. Но половина ребят, решили что полезней вести дозор по главным улицам, по которым чаще ходят люди. А мы считаем, что полезнее вести дозор за переулками, по которым скрываются беглецы. И судя по вам - не прогадали.</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Санура</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Ева2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">А как вы уследили за нами?</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Пай</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Пай1.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">До разделения мы успели построить систему наблюдательных пунктов с датчиками движения</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Адам</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Адам2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Расписание легионеров четкое. Они его не нарушают, а вот беглецы этому расписанию не подчиняются. А механизм способен тем самым сам определять тип наблюдаемого объекта и подавать нам сигнал о нем.</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Адам</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Адам2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Это довольно удивительная технология. Мне порой кажется, что цепочка из всех зеркал и шестеренок, каждый раз наблюдая за улицей, как будто бы умеет думать. Однако никому нельзя создать жизнь собственными руками…</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Санура</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Ева2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">У вас есть почти что живой механизм, который наблюдает за всем городом? Это поразительно!</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Вира</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Вира2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">ну, не за всем городом, но в сути своей - да. Это уникальное творение</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Адам2</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Адам2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Я бы не сказал, что полностью уникальное. В месте из которого мы пришли, таких механизмов очень много. И выглядят они более осознанно</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Пай</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Пай1.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Играть в жизнь опасно. Да и сомневаюсь, что можно создать полноценный мыслящий механизм, это противоестественно.</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Адам</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Адам.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Полноценную жизнь еще не удалось создать, но механизмы способные имитировать жизнь - уже существуют. Могу рассказать, как они работают</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Пай</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Пай1.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Время близиться к обеду. Давайте выпьем чаю, а вы расскажете о ваших технологиях</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Каин</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Каин2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Давай</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Пай</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Пай1.png"></div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <!--  -->
+                <!--  -->
+                <!-- Обучающая часть сюжета -->
+                <!--  -->
+                <!--  -->
+
+
+
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">У нас механизмы имитирующие мысли - называют нейросетями. “Нейросеть — это модель машинного обучения, которая имитирует структуру и функционирование нервных систем в живых организмах. Они состоят из входных, скрытых и выходных слоев, каждый из которых состоит из нескольких нейронов, которые взаимодействуют друг с другом.”</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Пай</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Пай1.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Нейросети используют в многих задачах, от анализа фото, до написания текста, а ваш механизм - простейший вид нейросети</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Пай</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Пай1.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Можно поподробнее про эти слои?</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Адам</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Адам2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Да: Входной слой - это часть отвечающая за получение информации, так например - фото, звук или же текст.</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Пай</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Пай1.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Скрытый слой - часть, в которой нейросеть обрабатывает полученную информацию, в соответствии с поставленной задачей.</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Пай</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Пай1.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Выходной слой - отвечает за передачу итоговой информации дальнейшему пользователю.</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Пай</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Пай1.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Важно в работе с нейросетями сделать правильный выбор архитектуры сети и параметров обучения. Так например слоев может быть не только 3, а нейронов в каждом из слоев - совершенно разное количество.</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Пай</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Пай1.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">И вы действительно это делаете в ручную? Да мы пока построили эти линии для наблюдения намучались с головой, а у вас для выполнения одной задачи нужно расписывать все эти слои, так еще и настраивать все</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Каин</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Каин2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Ну почти. Изначальный алгоритм действий для механизма действительно настраиваем мы, а дальше машина настраивает сама себя</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Пай</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Пай1.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Как она может настраивать себя сама, если она не может понять, какой результат нам нужен?</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Адам</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Адам2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Нейросети же бывают разные. Один алгоритм может создавать текст, а второй сравнивать этот текст с человеческими и давать оценку первой машине. Затем машина получая положительные результаты будет изменяться так, чтобы результат получался все лучше и лучше</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Пай</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Пай1.png"></div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <!-- -->
+                <!--  -->
+                <!-- Обучающая часть закончилась -->
+                <!--  -->
+                <!--  -->
+
+
+
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Но как вы именно меняете работу механизма? Машине трудно даже смазать себе все петли, а тут машина должна сама себя пересобрать. Такую задачу не каждый часовщик может сделать</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Адам/strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Адам2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF"> Ну тут с шестеренками тяжело. В нашем городе развитие уже давно ушло с шестеренчатых механизмов. Извиняюсь, но боюсь, что уже эти технологии мне будет трудно описать</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Пай</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Пай1.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Ничего страшного, все равно даже та информация может помочь. Но ваш рассказ не особо последователен, наверное нам было бы полезнее узнать о технологии, которую тебе трудно описать</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Адам</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Адам2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Адам, нам нужно поблагодарить гостей за то, чем они поделились</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Санура</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Ева2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Я полностью согласен</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Адам</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Адам2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">И так: Вы же наверняка сюда пришли не без цели?</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Адам</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Адам2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Да, так и есть! Мы ищем потерявшегося друга</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Джесси</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Джесси.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Нам какой-то старик у окраины города сказал, что он может быть в центре</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Вира</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Вира2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Сочувствую вашей проблеме, но если ваш друг действительно оказался в центре, то высока вероятность, что вы его не найдете</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Санура</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Ева2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Вы же наверняка слышали о превращении людей в кошек? Так вот, все люди что были в центре города в момент ЯВЛЕНИЯ - превратились в кошек без исключения, потеряв всю человечность</text></p>
+                            </div>Ч
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Санура</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Ева2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">С этого случая мы и ищем беглецов и  пытаемся помочь</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Санура</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Ева2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Мы даже не знаем можно ли обратить превращение</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Адам</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Адам2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Неужели нет вообще никаких способов ? Даже теоретических?</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Джесси</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Джесси.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Достоверных способов нет. Несколько ученых пытались сделать лекарство, но в последний раз, когда мы их навещали - в лаборатории остались только кошки</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Адам</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Адам2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">С того момента мы перестали к ним ходить, до храма очень трудно пробираться</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Адам</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Адам2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">А вы смотрели что они уже успели сделать?</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Пай</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Пай1.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Нет, когда мы пришли там были пару колб с какими-то записками. Но чуть ли не сразу пришли на шум легионеры и мы не успели рассмотреть что там находится</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Адам</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Адам.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">До сих пор считаю, что если ученые умудрились стать котами, то у них ничего не получилось</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Каин</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Каин2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Кто знает. Но рисковать и идти до храма - мы не собираемся</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Адам</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Адам2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Кто знает. Но рисковать и идти до храма - мы не собираемся.</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Адам</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Адам2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">То есть вы точно не знаете есть ли там лекарство, но шансы на это есть?</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Джесси</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Джесси.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">В целом шансы есть, но сначала нужно дойти до храма.</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Адам</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Пай1.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Это всяко лучше, чем ничего. Уж лучше хотя бы попытаться.</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Пай</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Пай1.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Вы сможете указать путь до храма?</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Пай</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Пай1.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Конечно. Мы можем дать вам карту, чтобы вы не заблудились</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Адам</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Адам.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Будет очень любезно с вашей стороны</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Пай</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Пай1.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Смотрите, здесь центр города. Мы вас до него доведем - это не проблема. Дальше, если вы найдете своего друга: вот тут я обведу ключевые места и примерный путь. Улицы всегда подписаны на углах зданий - не заблудитесь. Карту можете не отдавать, мы их специально подготавливаем</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Адам</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Адам2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Спасибо большое. Можете сейчас нас отвести до центра?</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Пай</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Пай1.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Да, вас проводит Каин. Он уже привык к этим маршрутам</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Адам</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Адам2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Только главное не отставайте, а то легионеры могут легко поймать</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Каин</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Каин2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Спасибо за ваш теплый прием</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Вира</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Вира2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Не за что. Удачи вам</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Санура</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Ева2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">До свидания </text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Пай</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Пай1.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Вот мы и пришли. В центре можете ходить как угодно без страха. Здесь патрули не ходят - им страшно, что сами заразятся</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Каин</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Каин2.png"></div>
+                        </div>
+                    </div>
+                </section>
+                <section data-background-image="images/подворотня1.png" data-transition="none" data-background-transition="none" data-auto-animate data-auto-animate-unmatched="false">
+                    <!-- Основное диалоговое окно: -->
+                    <h1 class=""></h1>
+                    <!-- Маленькое окно над диалоговым: -->
+                    <h2 class="windowSmall2"></h2>
+                    <!-- Текст ВНУТРИ диалогового окна: -->
+                    <div data-block-type="text" onclick="Reveal.next(); reInitText()">
+                            <div class="textMain animatedTxt" style=" text-align: left; font-size: 100%;">
+                                <p><text style="color:#FFFFFF">Благодарим за оказанную помощь</text></p>
+                            </div>
+                            </div>
+                    <!-- Кто говорит: -->
+                    <div data-block-type="text">
+                        <div class="imgnoevent textSmall" style="text-align: left; font-size: 80%">
+                            <p><span style="color:#FFFFFF"><strong>Стартов</strong></span></p>
+                        </div>
+                    </div>
+                    <!-- Спрайты: -->
+                    <div class="spriteCharacter" data-block-type="image" onclick="Reveal.next(); reInitText()">
+                        <div filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px) opacity(100%);>
+                            <!-- Спрайт Джесси: -->
+                            <div data-id="Вира" class="imgnoevent jessi1" style="left: calc(50vw - 390px);"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/startov.png"></div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+
+
             </section>
             
             <!-- <section>
