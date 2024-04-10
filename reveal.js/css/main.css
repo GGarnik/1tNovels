@@ -73,7 +73,13 @@
     width: 530px; 
     height: 870px; 
 }
-
+.startov {
+    position: absolute; 
+    top: calc(100vh - 675px);
+    left: calc(50vw - 290px);
+    width: 730px; 
+    height: 1070px; 
+}
 .spriteTalkWindowBig {
     position: absolute; 
     z-index: -1;
