@@ -44,8 +44,6 @@ const questions = [
         answers: ['Аэробус', 'Микротранзакция', 'Биткоин', 'Груша'],
         correctAnswer: 'Груша'
     },
-<<<<<<< Updated upstream
-=======
     {
         question: 'Кто лучший?',
         answers: ['Не мы', 'Мы'],
@@ -81,7 +79,6 @@ const questions = [
         answers: ['с 19 века', 'с 20 века', 'с 21 века', 'с 18 века'],
         correctAnswer: 'с 19 века'
     },
->>>>>>> Stashed changes
 ];
 //растасовка вопросов и ответов(рифл-шафл)
 function shuffleArray(array) {
@@ -99,18 +96,11 @@ function showQuestion() {
     const shuffledAnswers = shuffleArray(randomQuestion.answers.slice());
     shuffledAnswers.forEach(answer => {
         const button = document.createElement('button');
-<<<<<<< Updated upstream
-        button.className = 'examplebtn'
-        button.textContent = answer;
-        button.classList.add("button");
-       
-=======
         const buttonSpan = document.createElement('span')
         buttonSpan.appendChild(button)
         button.textContent = answer;
         button.id = 'button'
         button.className = 'answer-button custom-btn btn-2'
->>>>>>> Stashed changes
         button.onclick = function() {
             if (answer === randomQuestion.correctAnswer) {
                 alert('Верно!');
