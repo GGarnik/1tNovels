@@ -82,6 +82,13 @@
     height: 870px; 
 }
 
+.sanura1 {
+    position: absolute;
+    top: calc(100vh - 770px);
+    left: calc(50vw - 440px);
+    width: 800px;
+}
+
 .spriteTalkWindowBig {
     position: absolute; 
     z-index: -1;
