@@ -1,16 +1,9 @@
-.imgnoevent {
-    pointer-events: none;
-    -moz-user-select: none; 
-    -webkit-user-select: none; 
-    -ms-user-select: none; 
-    user-select: none;
-}
-
 .arrow {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    margin-left:-20px;
+    position: absolute;
+    z-index: 5;
+    top: calc(75vh);
+    display: block;
+    left: calc(-22px + 50vw);
     width: 40px;
     height: 40px;
     background-size: contain;
@@ -23,10 +16,11 @@
 }
 
 .arrow2 {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    margin-left:-20px;
+    position: absolute;
+    z-index: 5; 
+    left: 75vw;
+    top: calc(50vh - 42px); 
+    display: block;
     width: 40px;
     height: 40px;
     background-size: contain;
@@ -39,10 +33,11 @@
 }
 
 .arrow3 {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    margin-left:-20px;
+    position: absolute; 
+    z-index: 5; 
+    bottom: 75vh; 
+    display: block; 
+    left: calc(-22px + 50vw);
     width: 40px;
     height: 40px;
     background-size: contain;
@@ -55,10 +50,11 @@
 }
 
 .arrow4 {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    margin-left:-20px;
+    position: absolute; 
+    z-index: 5; 
+    right: 75vw;  
+    top: calc(50vh - 42px); 
+    display: block;
     width: 40px;
     height: 40px;
     background-size: contain;
@@ -68,6 +64,14 @@
     -ms-user-select: none; 
     -moz-user-select: none; 
     -webkit-user-select: none; 
+}
+
+.playerImg {
+    position: absolute; 
+    max-width: 1500%; 
+    max-height: 1500%; 
+    left: calc(50vw - 50px); 
+    top: calc(50vh - 70px);
 }
 
 .invisible {

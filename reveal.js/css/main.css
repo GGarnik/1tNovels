@@ -10,5 +10,148 @@
 .examplebtn:hover {
   color: #cccccc !important;
   background: #009999;
-  background: linear-gradient(to top, #1d7373, #1d7373);
+  background: linear-gradient(to top, #1d7373, #1d7373)}
+.blackBackground{
+    background-color: black;
+    opacity: 0.7;
+}
+/* Шрифт (НЕ ТРОГАТЬ) */
+.slides {
+    font-family: "IBM Plex Serif:500";
+}
+
+/* Запретить взаимодействие с спрайтом (вешайте на все нетыкабельные картинки) */
+.imgnoevent {
+    pointer-events: none;
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+}
+.limboBox{
+    position: absolute;
+    left: calc(50% - 500px);
+    top: 7vw;
+    width: 1000px;
+    height: 400px;
+    background-color: black;
+}
+.testButton{
+    width: 100px;
+    height: 100px;
+}
+.limboObject{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+}
+.mainChoise{
+    filter: brightness(100%);
+    position: absolute;
+    left: calc(50% - 400px);
+    top: 4vw;
+    width: 800px;
+    height: 200px;
+    background-color: black;
+    color: blanchedalmond;
+}
+.mainChoiseButton{
+    filter: brightness(100%);
+    position: relative;
+    top: 100px;
+    width: 250px;
+    height: 80px;
+    color: #FFFF;
+    background-color: black;
+    box-shadow: #FFFF;
+}
+.spriteCharacter {
+    position: absolute; 
+    min-width: 1px; 
+    min-height: 1px; 
+    z-index: -2;
+}
+  
+.jessi1 {
+    position: absolute; 
+    top: calc(100vh - 775px);
+    left: calc(50vw - 290px);
+    width: 530px; 
+    height: 870px; 
+}
+
+.startov1 {
+    position: absolute; 
+    top: calc(100vh - 543px);
+    left: calc(50vw - 290px);
+    width: 530px; 
+    height: 870px; 
+}
+
+.spriteTalkWindowBig {
+    position: absolute; 
+    z-index: -1;
+    width: 1246px; 
+    height: 193px; 
+    left: calc(50vw - 630px);
+    top: calc(100vh - 210px);
+    animation: none;
+}
+
+.spriteTalkWindowSmall {
+    position: absolute; 
+    z-index: -1;
+    width: 222px; 
+    height: 52px; 
+    left: calc(50vw - 615px);
+    top: calc(100vh - 257px);
+}
+
+.windowSmall2 {
+    position: absolute; 
+    top: -7px;
+}
+
+.textMain {
+    position: absolute;
+    height: auto; 
+    width: 1200px;
+    z-index: 4;
+    left: calc(50vw - 610px);
+    top: calc(100vh - 205px);
+}
+
+.textSmall {
+    position: absolute;
+    height: auto; 
+    width: 600px;
+    z-index: 3;
+    left: calc(50vw - 595px);
+    top: calc(100vh - 273px);
+}
+
+.button {
+    height: 5rem;
+    width: 15rem;
+}
+
+
+
+.shakeText {
+    animation: shake 1s ease infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
