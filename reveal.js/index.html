@@ -1,53 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
 
-    <title>reveal.js</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <title>reveal.js</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="/images/favicons/БАНКА ОГУРЦООООВ БЕЗ ФОНА.ico"
-    />
+  <title>reveal.js</title>
 
-    <link rel="stylesheet" href="dist/reset.css" />
-    <link rel="stylesheet" href="dist/reveal.css" />
-    <link rel="stylesheet" href="dist/theme/black.css" />
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="dist/theme/minigamebackground.css" />
-    <link rel="stylesheet" href="dist/customtheme.css" />
+  <title>reveal.js</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicons/БАНКА ОГУРЦООООВ БЕЗ ФОНА.ico" />
 
-    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
-    <link rel="stylesheet" href="css/quiz.css" />
-  </head>
+  <link rel="stylesheet" href="dist/reset.css" />
+  <link rel="stylesheet" href="dist/reveal.css" />
+  <link rel="stylesheet" href="dist/theme/black.css" />
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="dist/theme/minigamebackground.css" />
+  <link rel="stylesheet" href="dist/customtheme.css" />
 
-  <body>
-    <div class="reveal">
+  <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  <link rel="stylesheet" href="css/quiz.css" />
+</head>
+
+<body>
+  <div class="reveal">
+
+
+  
+  <div class="slides">
+    <section>
       <div class="quiz-flexbox hidden" id="spizdili">
         <div class="quiz">
-          <div id="question"></div>
+          <div id="question" style='text-align: center; '></div>
           <div id="answers"></div>
         </div>
-      </div>
-      <div class="slides">
-        <section>asdfasd    </section>
-      </div>
-    </div>
+    </section>
+  </div>
+  </div>
 
-    <script src="dist/reveal.js"></script>
-    <script src="plugin/notes/notes.js"></script>
-    <script src="plugin/markdown/markdown.js"></script>
-    <script src="plugin/highlight/highlight.js"></script>
-    <script src="js/pull.js"></script>
-    <!-- C:\Users\User\Documents\GitHub\1tNovels\reveal.js\images\favicons\БАНКА ОГУРЦООООВ БЕЗ ФОНА.ico -->
-    <!--
+  <script src="dist/reveal.js"></script>
+  <script src="plugin/notes/notes.js"></script>
+  <script src="plugin/markdown/markdown.js"></script>
+  <script src="plugin/highlight/highlight.js"></script>
+  <script src="js/pull.js"></script>
+  <script src='js/test.js'></script>
+  <!-- C:\Users\User\Documents\GitHub\1tNovels\reveal.js\images\favicons\БАНКА ОГУРЦООООВ БЕЗ ФОНА.ico -->
+  <!--
         <script src="js/reactionSc.js"></script>
         <script src="dist/mapgame.js"></script>
 
@@ -65,29 +63,29 @@
         crossorigin="anonymous"></script>
         -->
 
-    <script>
-      // More info about initialization & config:
-      // - https://revealjs.com/initialization/
-      // - https://revealjs.com/config/
-      Reveal.initialize({
-        hash: false,
+  <script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+      hash: false,
 
-        // Learn about plugins: https://revealjs.com/plugins/
-        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
-        progress: true,
-        keyboard: true,
-        width: 1280,
-        height: 720,
-        controls: false,
-        center: false,
-        jumpToSlide: true,
-        transition: "none",
-        backgroundTransition: "none",
-        disableLayout: true,
-      });
-    </script>
+      // Learn about plugins: https://revealjs.com/plugins/
+      plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      progress: true,
+      keyboard: true,
+      width: 1280,
+      height: 720,
+      controls: false,
+      center: false,
+      jumpToSlide: true,
+      transition: "none",
+      backgroundTransition: "none",
+      disableLayout: true,
+    });
+  </script>
 
-    <!-- <script>
+  <!-- <script>
         let div = document.querySelector(".animatedTxt");
         let text = div.textContent;
         text = text.trim(" ");
@@ -132,5 +130,6 @@
             }
         }
     </script> -->
-  </body>
+</body>
+
 </html>
