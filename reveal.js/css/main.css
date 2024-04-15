@@ -89,6 +89,13 @@
     width: 800px;
 }
 
+.ura1 {
+    position: absolute;
+    top: calc(100vh - 720px);
+    left: calc(50vw - 360px);
+    width: 660px;
+}
+
 .spriteTalkWindowBig {
     position: absolute; 
     z-index: -1;
