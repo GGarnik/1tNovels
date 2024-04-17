@@ -74,6 +74,13 @@
     height: 870px; 
 }
 
+.akil1 {
+    position: absolute; 
+    top: calc(100vh - 625px);
+    left: calc(50vw - 310px);
+    width: 620px;
+}
+
 .startov1 {
     position: absolute; 
     top: calc(100vh - 543px);
