@@ -5,6 +5,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<title>Стимпанк-Египет</title>
+        <!-- <link rel="icon" type="image/x-icon" href="/images/favicon2.ico" /> -->
+        <link rel="icon" href="/images/favicon2.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/images/favicon2.ico" type="image/x-icon">
 
         <link rel="stylesheet" href="css/limbo.css">
 		<link rel="stylesheet" href="dist/reset.css">
@@ -66,6 +69,15 @@
                         <!-- Спрайт Пая: -->
                         <div data-id="pay" class="imgnoevent jessi1 blackimage" style="left: calc(50vw - 110px); opacity: 0%;"><img data-natural-width="768" data-natural-height="1152" data-lazy-loaded="" data-src="images/Пай1.png"></div>
                     </div>
+                </div>
+
+                <div style="position: absolute;">
+                    <button onclick="shortcutDima()">Часть Димы</button>
+                    <button onclick="shortcutLabyrinth()">Лабиринт</button>
+                    <button onclick="shortcutNastya()">Часть Насти</button>
+                    <button onclick="shortcutJupiter()">Часть Маши</button>
+                    <button onclick="shortcutMisha()">Часть Миши</button>
+                    <button onclick="shortcutSasha()">Часть Саши</button>
                 </div>
             </section>
 			<!--СЛАЙД 2-->
@@ -8056,8 +8068,8 @@
                 </div>
             </section>
             
-            <!-- 
-            РЕАКЦИЯ (ДРЕЛЬ)
+            
+            <!-- РЕАКЦИЯ (ДРЕЛЬ) -->
             <section id="3rd Slide" data-background="#000000"  class="has-dark-background present" style="display: block;" data-index-h="2" data-transition="none" data-background-transition="none">
                 <div>
                     <div class="imgnoevent textSmall" data-block-type="text" style="color: rgb(255, 255, 255); position: absolute; top: 350px; left: 252px; " id="rscTextofButton">
@@ -8079,16 +8091,16 @@
                  </div>
             </section>
 
-            ВОПРОСЫ (ТЕСТ)
+            <!-- ВОПРОСЫ (ТЕСТ) -->
             <section>
             <script src = 'js/pull.js'></script>
     
-            <h1>Ответьте на вопрос:</h1>
+            <text>Ответьте на вопрос:</text>
             <div id="question"></div>
             <div id="answers"></div> 
 				
-            Тут точно будет пул вопросов...
-			</section> -->
+            <!-- Тут точно будет пул вопросов... -->
+			</section>
 			
 
 
@@ -14730,10 +14742,10 @@
         <script src="dist/mapgame.js"></script>
         <script src="js/music.js"></script>
         
-        <!--
+        
         <script src="js/reactionSc.js"></script>
         
-
+        <!--
 		<script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.3.0/math.min.js></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
 		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -14757,12 +14769,12 @@
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
 				progress: false,
-				keyboard: false,
+				keyboard: true,
 				width: 1280,
   				height: 720,
 				controls: false,
 				center: false,
-				jumpToSlide: false,
+				jumpToSlide: true,
                 transition: 'none',
                 backgroundTransition: 'none',
                 disableLayout: true
@@ -14829,7 +14841,6 @@
                 {
                     reInitText();
                 }
-                console.log("фДЛОВЫЖАДЛОЫЖВДЛАОЫЖВДЛОА");
             }
 
             //создаем вызов в первом слайде для ui что бы получать и выводить текст
@@ -14855,6 +14866,48 @@
                 playerName.innerHTML = name_player + "? Точно?";
                 var buttonCorrect1 = document.getElementById("buttonCorrect1");
                 buttonCorrect1.innerHTML = "<button onclick='textTypingEffect(div, text); Reveal.next()'>Точно!"
+            }
+            function shortcutDima() {
+                Reveal.slide(28);
+                while(text != "Тихо! Все в подворотню!")
+                {
+                    reInitText();
+                }
+            }
+            function shortcutLabyrinth() {
+                Reveal.slide(40);
+                while(text != "Компания дошла до храма. Вокруг храма ни души. Видимо, все в страхе разбежались.")
+                {
+                    reInitText();
+                }
+            }
+            function shortcutNastya() {
+                Reveal.slide(41);
+                while(text != "Компания дошла до храма. Вокруг храма ни души. Видимо, все в страхе разбежались.")
+                {
+                    reInitText();
+                }
+            }
+            function shortcutJupiter() {
+                Reveal.slide(65);
+                while(text != "Герои входят внутрь храма.")
+                {
+                    reInitText();
+                }
+            }
+            function shortcutMisha() {
+                Reveal.slide(99);
+                while(text != "Тут слишком темно!")
+                {
+                    reInitText();
+                }
+            }
+            function shortcutSasha() {
+                Reveal.slide(218);
+                while(text != "Ура, мы сделали это! Теперь пора по быстрее отсюда уходить. Юра, ты где?")
+                {
+                    reInitText();
+                }
             }
         </script>
 	</body>
