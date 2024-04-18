@@ -20,14 +20,20 @@
 	<body>
     <div class="reveal">
         <div class="slides">
-            <section>
+            <section style="top:calc(50vh - 100px)">
 				
 						
                 <div class = "out">Выберите имя игрока:</div>
                 <input type="text" class="input_text">
-                <button onclick="button_input(); textTypingEffect(div, text)">Принять имя</button>
-                
+                <button onclick="button_input();">Принять имя</button>
+
+                <div>
+                    <p id="playerName"></p>
+                    <p id="buttonCorrect1"></p>
+                </div>
+                <!-- button_input(); textTypingEffect(div, text) -->
             </section>
+
 
             
             <!-- ЧАСТЬ ГАРНИКА (ВСТУПЛЕНИЕ) -->
@@ -14751,12 +14757,12 @@
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
 				progress: false,
-				keyboard: true,
+				keyboard: false,
 				width: 1280,
   				height: 720,
 				controls: false,
 				center: false,
-				jumpToSlide: true,
+				jumpToSlide: false,
                 transition: 'none',
                 backgroundTransition: 'none',
                 disableLayout: true
@@ -14839,10 +14845,17 @@
 				else{
 					//document.querySelector(".out").innerHTML = name_player;
 					console.log(name_player);
-					Reveal.slide(1)
+                    name_display();
+					//Reveal.slide(1)
 					//document.querySelector(".out_name_next").innerHTML = name_player
 				}
 			}
+            function name_display() {
+                var playerName = document.getElementById("playerName");
+                playerName.innerHTML = name_player + "? Точно?";
+                var buttonCorrect1 = document.getElementById("buttonCorrect1");
+                buttonCorrect1.innerHTML = "<button onclick='textTypingEffect(div, text); Reveal.next()'>Точно!"
+            }
         </script>
 	</body>
 </html>
