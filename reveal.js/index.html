@@ -17,7 +17,7 @@
 		<link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="dist/theme/minigamebackground.css">
         <link rel="stylesheet" href="dist/customtheme.css">
- 
+        <link rel="stylesheet" href="css/quiz.css">
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 	</head>
 	<body>
@@ -8091,16 +8091,24 @@
                  </div>
             </section>
 
-            <!-- ВОПРОСЫ (ТЕСТ) -->
+            <!-- ВОПРОСЫ (ТЕСТ)
             <section>
-            <script src = 'js/pull.js'></script>
     
             <text>Ответьте на вопрос:</text>
             <div id="question"></div>
             <div id="answers"></div> 
 				
-            <!-- Тут точно будет пул вопросов... -->
-			</section>
+            Тут точно будет пул вопросов...
+			</section> -->
+
+            <section>
+                <div class='quiz-flexbox'>
+                    <div class='quiz'>
+                        <div id='question'></div>
+                        <div id='answers'></div>
+                    </div>
+                </div>
+            </section>
 			
 
 
@@ -14741,8 +14749,7 @@
 		<script src="plugin/highlight/highlight.js"></script>
         <script src="dist/mapgame.js"></script>
         <script src="js/music.js"></script>
-        
-        
+        <script src="js/pull.js"></script>
         <script src="js/reactionSc.js"></script>
         
         <!--
@@ -14769,12 +14776,12 @@
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
 				progress: false,
-				keyboard: true,
+				keyboard: false,
 				width: 1280,
   				height: 720,
 				controls: false,
 				center: false,
-				jumpToSlide: true,
+				jumpToSlide: false,
                 transition: 'none',
                 backgroundTransition: 'none',
                 disableLayout: true
@@ -14882,28 +14889,28 @@
                 }
             }
             function shortcutNastya() {
-                Reveal.slide(41);
+                Reveal.slide(43);
                 while(text != "Компания дошла до храма. Вокруг храма ни души. Видимо, все в страхе разбежались.")
                 {
                     reInitText();
                 }
             }
             function shortcutJupiter() {
-                Reveal.slide(65);
+                Reveal.slide(67);
                 while(text != "Герои входят внутрь храма.")
                 {
                     reInitText();
                 }
             }
             function shortcutMisha() {
-                Reveal.slide(99);
+                Reveal.slide(101);
                 while(text != "Тут слишком темно!")
                 {
                     reInitText();
                 }
             }
             function shortcutSasha() {
-                Reveal.slide(218);
+                Reveal.slide(220);
                 while(text != "Ура, мы сделали это! Теперь пора по быстрее отсюда уходить. Юра, ты где?")
                 {
                     reInitText();

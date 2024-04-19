@@ -135,6 +135,9 @@ function canClickInit() {
         canClickUpButton = false;
         canClickDownButton = false;
         canClickRightButton = false;
+        Reveal.right();
+        Reveal.right();
+        Reveal.right();
     }
 
     if(!canClickLeftButton) {
