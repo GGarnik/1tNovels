@@ -1,3 +1,28 @@
+let prizonFO = document.getElementById('prizonFrontOpen');
+let prizonFC = document.getElementById('prizonFrontClose');
+let prizonB = document.getElementById('prizonBack');
+
+let textReact = document.getElementById('textReact');
+let reactArea = document.getElementById('reactionRightArea');
+let playerReact = document.getElementById('playerReact');
+let buttonStartText = document.getElementById('buttonStartText');
+let buttonStart = document.getElementById('buttonStart');
+let framesPerSec = 1500;
+let sF = true;
+let reactASW = 200;
+let leftSuccses = false;
+let rightSuccses = false;
+let criticalSuccses = false;
+let animatePRTime;
+let animatePR = {transform: "translateX(800px)"}
+
+let arrTestView = [prizonB, prizonFC, prizonFO, reactArea, playerReact, buttonStart];
+// 
+// 
+// 
+
+let startAnim = false;
+
 let canClickRightButton = false;
 let canClickLeftButton = true;
 let canClickUpButton = false;
@@ -6,6 +31,13 @@ let numOfMove = 0;
 let falseCounter = 0;
 
 let sleepCancle = false;
+
+let arrows = [
+ arrowD = document.getElementById('downArrow'),
+ arrowU = document.getElementById('upArrow'),
+ arrowR = document.getElementById('rightArrow'),
+ arrowL = document.getElementById('leftArrow'),
+]
 
 let gear = document.getElementById('g1');
 let gear2 = document.getElementById('g2');
@@ -35,13 +67,20 @@ let angleSmall2 = document.getElementById('u2');
 let angleSmall3 = document.getElementById('u3');
 let angleSmall4 = document.getElementById('u4');
 
-
+let playerMap = document.getElementById('playerMap');
 let map = document.getElementById('map');
 
+// window.addEventListener('load', () => {
+    
+//   });
+  
 
 window.onload = function() {
+    hideTest();
     canClickInit();
     showAnswers();
+    
+    
 }
 
 const correctSide = ["l", "u", "u", "l", "u", "r", "r", "u", "l", "u", "u", "l", "l"
@@ -52,6 +91,7 @@ const canClickSides = ["l", "lur", "du", "rdl", "udrl", "rud", "rl", "ul", "uld"
 , "rud", "ud", "udl", ""]
 
 function arrowRight() {
+    if (!startAnim){
     if(canClickRightButton && !sleepCancle && numOfMove !== 33) {
         if(correctSide[numOfMove] == "r") {
             console.log("Всё нормально.");
@@ -59,13 +99,15 @@ function arrowRight() {
             canClickInit();
         } else {
             console.log("НЕПРАВИЛЬНО");
-            Reveal.next();
+            startTest();
             falseCounter++
         }
     }
 }
+}
 
 function arrowUp() {
+    if (!startAnim){
     if(canClickUpButton && !sleepCancle && numOfMove !== 33) {
         if(correctSide[numOfMove] == "u") {
             console.log("Всё нормально.");
@@ -73,13 +115,15 @@ function arrowUp() {
             canClickInit();
         } else {
             console.log("НЕПРАВИЛЬНО");
-            Reveal.next();
+            startTest();
             falseCounter++
         }
     }
 }
+}
 
 function arrowDown() {
+    if (!startAnim){
     if(canClickDownButton && !sleepCancle && numOfMove !== 33) {
         if(correctSide[numOfMove] == "d") {
             console.log("Всё нормально.");
@@ -87,13 +131,15 @@ function arrowDown() {
             canClickInit();
         } else {
             console.log("НЕПРАВИЛЬНО");
-            Reveal.next();
+            startTest();
             falseCounter++
         }
     }
 }
+}
 
 function arrowLeft() {
+    if (!startAnim){
     if(canClickLeftButton && !sleepCancle && numOfMove !== 33) {
         if(correctSide[numOfMove] == "l") {
             console.log("Всё нормально.");
@@ -101,10 +147,11 @@ function arrowLeft() {
             canClickInit();
         } else {
             console.log("НЕПРАВИЛЬНО");
-            Reveal.next();
+            startTest();
             falseCounter++
         }
     }
+}
 }
 
 function canClickInit() {
@@ -137,6 +184,17 @@ function canClickInit() {
         canClickRightButton = false;
     }
 
+   setVisibilityArrows();
+
+    if(!isSpeedUp) {
+        isSpeedUp = true;
+        sleepCancle = true;
+        randomRotationAngle = Math.round(Math.random() * 5);
+        tmpRotationMap = rotationAngleMap;
+        setTimeout(() => {  isSpeedUp = false; smartRound(); map.style.transform = `rotate(${rotationAngleMap}deg)`; sleepCancle = false;  }, 2000);
+    }
+}
+function setVisibilityArrows(){
     if(!canClickLeftButton) {
         document.getElementById("leftArrow").style.display = "none";
     } else {
@@ -157,16 +215,7 @@ function canClickInit() {
     } else {
         document.getElementById("downArrow").style.display = "block";
     }
-
-    if(!isSpeedUp) {
-        isSpeedUp = true;
-        sleepCancle = true;
-        randomRotationAngle = Math.round(Math.random() * 5);
-        tmpRotationMap = rotationAngleMap;
-        setTimeout(() => {  isSpeedUp = false; smartRound(); map.style.transform = `rotate(${rotationAngleMap}deg)`; sleepCancle = false;  }, 2000);
-    }
-}
-
+};
 const lerp = (a, b, t) => a * (1 - t) + b * t;
 
 const durationNormal = 20;
@@ -216,6 +265,24 @@ function update(now) {
             break;
     }
     }
+
+// 
+// 
+// 
+// 
+//     
+// ЗДЕСЬ РЕДАЧИТЬ ГАРНИКА С animate!!!!
+//          |
+//          |
+//          |
+//          |
+//          |
+//          V
+// 
+// 
+
+
+
 
     if(isSpeedUp && currentRotationMap < 0) {
         tmpRotationMap2 = tmpRotationMap + currentRotationMap;
@@ -624,4 +691,161 @@ function invisibleSet() {
             }
             break;
     }
+
 }
+
+    //часть с реакцией lc_mln
+
+
+    function hideGgarnik(){
+        playerMap.style.display = "none";
+        arrows.forEach((arr) => {arr.style.display = "none"});
+        startAnim = true;
+    }
+    function viewGgarnik(){
+        playerMap.style.display = "block";
+        setVisibilityArrows();
+        startAnim = false;
+    }
+    function viewTest(){
+        arrTestView.forEach((arr)=>{arr.style.display = "block"})
+        // buttonStart.style.display = "block";
+        buttonStartText.textContent = 'попытаться сбежать';
+        // playerReact.style.display = "block";
+        // reactArea.style.display = "block";
+    }
+    function hideTest(){
+        arrTestView.forEach((arr)=>{arr.style.display = "none"})
+        // buttonStart.style.display = "none";
+        buttonStartText.textContent = '';
+        buttonStartText.className = ''
+        // playerReact.style.display = "none";
+        // reactArea.style.display = "none";
+    }
+    function setTimeLength(){
+        if(framesPerSec >= 1000){
+        framesPerSec -= falseCounter*20;
+        }else if(framesPerSec >= 800){
+            framesPerSec -= falseCounter*10
+        }else if(framesPerSec >= 500){
+            framesPerSec -= falseCounter*5
+        }
+    }
+    function startTest(){
+        setTimeLength();
+        animatePRTime = {duration: framesPerSec, iterations: 1};
+        viewTest();
+        hideGgarnik();
+        // console.log('startTest');
+    }
+
+    function switchFunc(){
+      console.log('switchFunc');        
+      if(sF){
+        sF = false;
+        // console.log('switchToStop')
+        buttonStartText.className = 'textRun'
+        buttonStartText.textContent = 'БЕЖАТЬ!';
+        startAnimate();
+ 
+      }else{
+        sF = true;
+        stop();
+        // console.log('switchToStart')
+      }
+    }
+    function startAnimate(){
+    playerReact.animate(animatePR, animatePRTime);
+    prizonFC.style.display = "none"
+    }
+
+ //   addEventListener("animationend", (playerReact) => {stop(); alert('сработала остановка');})
+
+    function stop(){
+    endReaction();    
+    hideTest();
+    viewGgarnik();
+    
+    }
+
+    function checkUp(num){
+        console.log('checkUp');
+        // console.log('player: '+ playerReact.getBoundingClientRect + "\n area: " + reactArea.getBoundingClientRect);
+        console.log('cord player: \nleft: ' + playerReact.getBoundingClientRect().x + "\nright: " + playerReact.getBoundingClientRect().right);
+        console.log('cord area: \nleft: ' + reactArea.getBoundingClientRect().x + "\nright: " + reactArea.getBoundingClientRect().right);
+        switch (num){
+        case 1: 
+        
+        if ((playerReact.getBoundingClientRect().x >= reactArea.getBoundingClientRect().x) && (playerReact.getBoundingClientRect().x <= reactArea.getBoundingClientRect().right))
+        {
+            leftSuccses = true;
+        }
+        else{
+            leftSuccses = false;
+        }
+        // console.log('leftSuccses = ' + leftSuccses);
+        
+        return leftSuccses;
+
+        case 2:
+        
+        if((playerReact.getBoundingClientRect().right >= reactArea.getBoundingClientRect().x) && (playerReact.getBoundingClientRect().right <= reactArea.getBoundingClientRect().right))
+        {
+            rightSuccses = true;
+        }
+        else{
+            rightSuccses = false;
+        }
+        // console.log('RightSuccses = ' + rightSuccses);
+        
+        return rightSuccses;
+
+        // case 3:
+        
+        // if(leftSuccses && rightSuccses){
+        //     criticalSuccses = true;
+        // }
+        // console.log('criticalSuccses = ' + criticalSuccses);
+        
+        // return criticalSuccses;
+
+     }
+     
+    }
+
+    
+    function endReaction(){
+        console.log(checkUp(1) + checkUp(2));
+        if (checkUp(1) && checkUp(2)){
+                // alert('ПОБЕДА');
+                textReact.textContent = 'Критический успех! Вы сбежали'
+        } else if (checkUp(1) || checkUp(2)){
+            // alert('победа');
+            
+                if(parseInt(reactArea.getBoundingClientRect().width) >= 80)
+                {
+                reactASW -= 20;
+                reactArea.style.width = `${reactASW}px`;
+                textReact.textContent = 'Вы сбежали, споткнувшись об угол. Маневренность уменьшилась'
+                } else
+                {
+                textReact.textContent = 'Из-за сильной усталости - вас смогли догнать легионеры' 
+                }
+        } else {
+            textReact.textContent = 'Вас поймали и пытают!'
+            Reveal.next();
+            // alert('проигрыш')
+        }
+        // console.log('endReaction');
+    }
+    function restart(){
+    
+    }
+  
+
+
+
+
+
+
+    

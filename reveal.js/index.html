@@ -59,7 +59,7 @@
             <!-- НЕ ТРОГАТЬ!! -->
             <section id="SlideMap">
                 <div style="height: 100vh; width: 100vw">
-                    <img data-src="images/player.png" class="imgnoevent playerImg">
+                    <img id="playerMap" data-src="images/player.png" class="imgnoevent playerImg">
 
                     <img id="ss1" data-src="images/сплошнаястена.png" class="imgnoevent invisible" style="position: absolute; bottom: calc(100vh - 520px); z-index: -1; width: 2000px; height: 500px; max-width: 15000%; max-height: 15000%; left: calc(100vw - 2000px);">
                     <img id="ss2" data-src="images/сплошнаястена.png" class="imgnoevent invisible" style="position: absolute; top: calc(100vh - 520px); z-index: -1; width: 2000px; height: 500px; left: calc(100vw - 2000px); transform: rotate(180deg); max-width: 15000%; max-height: 15000%;">
@@ -94,8 +94,18 @@
                     <div style="position: absolute; top: 0px; left: calc(100vw - 275px); z-index: 1;"><img id="g6" data-src="images/шестерня3.png" class="imgnoevent" style="width: 40%; height: 40%;"></div>
                     <div style="position: absolute; top: 200px; z-index: 1; left: calc(100vw - 140px);"><img id="g7" data-src="images/шестерня1.png" class="imgnoevent" style="width: 40%; height: 40%;"></div>
                 </div>
+                <!-- Часть с реакцией Lck_mln -->
+                <div id="prizonFrontOpen" class="prizon imgnoevent"style="z-index: 3;"><img src="images/PrizonOpenFront.png" alt=""></div>
+                <div id="prizonBack"class="prizon imgnoevent"style="z-index: 1;" ><img src="images/PrizonOpenBack.png" alt=""></div>
+                <div id="prizonFrontClose"class="prizon imgnoevent" style="z-index: 3;"><img src="images/PrizonEvo.png" alt=""></div>
+                <div class="reactionRightArea" id="reactionRightArea" ></div>
+                <div> <strong id="textReact" style="position: absolute; left: 20%; top: 20%;"></strong></div>
+                <div id="playerReact" class="imgnoevent playerReaction" style="z-index: 2;"  ><img src="images/player.png" alt=""></div>
+                <div id="buttonStart" class="buttonReact" onclick="switchFunc();"><div id="buttonStartText" class="" >Попытаться сбежать</div></div>
             </section>
-            
+          <section>
+            <div><p>Это пустой слайд</p></div>
+          </section>
             <!-- 
             РЕАКЦИЯ (ДРЕЛЬ)
             <section id="3rd Slide" data-background="#000000"  class="has-dark-background present" style="display: block;" data-index-h="2" data-transition="none" data-background-transition="none">
