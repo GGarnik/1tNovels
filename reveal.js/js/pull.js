@@ -164,6 +164,7 @@ function showQuestion() {
             }
             //надо прервать тестик лол
             //location.reload() // window.location.reload() эт перезагрузка
+            showAnswers();
             Reveal.left(); 
             Reveal.left(); 
         };
