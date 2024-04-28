@@ -21,6 +21,45 @@
     -ms-user-select: none; 
     user-select: none;
 }
+.prizon{
+    position: absolute;
+    left: calc(25vw + 0px);
+    top:  calc(50vh - 66px);
+    height: 120px;
+    width: 120px;
+}
+.buttonReact{
+    position: absolute;
+    left: 30vw;
+    top: 75vh;
+    width: 800px;
+    height: 100px;
+    border-radius: 40px;
+    background-color: black;
+    color: antiquewhite;
+    cursor: pointer;
+}
+.playerReaction{
+    position: absolute;
+    left: calc(25vw + 0px);
+    top:  calc(50vh - 66px);
+    height: 100px;
+    width: 100px;
+
+}
+.reactionRightArea{
+    position: absolute;
+    left: calc(25vw + 600px);
+    top:  calc(50vh - 46px);
+    height: 100px;
+    width: 200px;
+    background-color: rgb(136, 214, 19);
+}
+.textRun{
+    animation: pulse 300ms infinite cubic-bezier(.69,.03,.19,.96) alternate-reverse;
+    height: auto;
+    width: auto;
+}
 .limboBox{
     position: absolute;
     left: calc(50% - 500px);
